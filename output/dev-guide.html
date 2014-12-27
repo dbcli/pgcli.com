@@ -26,7 +26,52 @@
 <section id="content" class="body">
     <h1 class="entry-title">Dev Guide</h1>
     
-    
+    <p>This is a guide for developers who would like to contribute to this project.</p>
+<p>First of all I'm flattered that you're interested in contributing. Second, my
+heart felt thanks for contributing.</p>
+<div class="section" id="github-workflow">
+<h2>GitHub Workflow</h2>
+<p>If you already know how to work with github, you can safely skip this section.</p>
+<p><a class="reference external" href="https://github.com/amjith/pgcli">Fork the project</a> in github.  Then
+clone your fork into your computer (<tt class="docutils literal">git clone <span class="pre">&lt;url-for-your-fork&gt;</span></tt>).  Make
+the changes and create the commits in your local machine. Then push those
+changes to your fork. Then click on the pull request icon on github and create
+a new pull request. Add a description about the change and send it along. I
+promise to review the pull request in a reasonable window of time and get back
+to you.</p>
+<p>In order to keep your fork up to date with any changes from mainline, add a new
+git remote to your local copy called 'upstream' and point it to the main pgcli
+repo.</p>
+<pre class="literal-block">
+$ git remote add upstream git&#64;github.com:amjith/pgcli.git
+</pre>
+<p>Once the 'upstream' end point is added you can then periodically do a <tt class="docutils literal">git
+pull upstream master</tt> to update your local copy and then do a <tt class="docutils literal">git push
+origin master</tt> to keep your own fork up to date.</p>
+</div>
+<div class="section" id="local-development-setup">
+<h2>Local Development Setup</h2>
+<p>It is highly recommended to use virtualenv for development. If you don't know
+what a virtualenv is, this <a class="reference external" href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtual-environments">guide</a>
+will help you get started.</p>
+<p>Create a virtualenv (let's call it pgcli-dev). Once the virtualenv is activated
+<cite>cd</cite> into the local clone of pgcli folder and install pgcli using pip as
+follows:</p>
+<pre class="literal-block">
+$ pip install --editable .
+
+or
+
+$ pip install -e .
+</pre>
+<p>This will install the necessary dependencies as well as install pgcli from the
+working folder into the virtualenv. By installing it using <cite>pip install -e</cite>
+we've linked the pgcli installation with the working copy. So any changes made
+to the code is immediately available in the installed version of pgcli. This
+makes it easy to change something in the code, launch pgcli and check the
+effects of your change.</p>
+</div>
+
 </section>
         <section id="extras" class="body">
                 <div class="social">
