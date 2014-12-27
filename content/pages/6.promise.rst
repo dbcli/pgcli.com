@@ -3,7 +3,8 @@ Promise
 
 :slug: promise
 
-Hi, I'm Amjith_. I refuse to be an unpleasant individual on the internet.
+Hi, I'm Amjith_. I am the author of pgcli_. I refuse to be an unpleasant
+individual on the internet.
 
 I will:
 -------
@@ -46,3 +47,4 @@ But this is not a cop out, I'd still appreciate if you call me out when I make
 a faux paus. 
 
 .. _Amjith: https://github.com/amjith 
+.. _pgcli: http://pgcli.com

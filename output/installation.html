@@ -28,17 +28,53 @@
     
     <div class="section" id="quick-start">
 <h2>Quick start:</h2>
-<p>pip install pgcli</p>
+<p>If you already know how to install python packages, then you can simply do:
+You might need <tt class="docutils literal">sudo</tt>.</p>
+<pre class="literal-block">
+$ pip install pgcli
+
+or
+
+$ easy_install install pgcli
+</pre>
 </div>
 <div class="section" id="detailed">
 <h2>Detailed:</h2>
+<p>For installing Python packages it is recommended to use the package manager
+called <cite>pip</cite>. There is also an older package manager known as <tt class="docutils literal">easy_install</tt>
+but it is superseded by pip.</p>
+<p>Check if <cite>pip</cite> is installed on the system.</p>
+<pre class="literal-block">
+$ which pip
+</pre>
+<p>If the above command returns an error, then you do not have pip installed on
+your computer. You can install pip for your OS using one of the following
+methods.</p>
 <div class="section" id="linux">
 <h3>Linux:</h3>
-<p>Check if pip is available. If not install it via apt-get or rpm</p>
+<p>Debian based systems (Debian, Ubuntu, Mint etc)</p>
+<pre class="literal-block">
+$ sudo apt-get install python-pip
+</pre>
+<p>For Redhat based systems (Fedora, Centos, RHEL etc)</p>
+<pre class="literal-block">
+$ sudo yum install python-pip
+</pre>
+<p>After this you can simply do:</p>
+<pre class="literal-block">
+$ sudo pip install pgcli
+</pre>
 </div>
 <div class="section" id="mac-os-x">
 <h3>Mac OS X:</h3>
-<p>Check if pip is installed. If not install it via easy_install.</p>
+<p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
+use easy_install to install <tt class="docutils literal">pip</tt>.</p>
+<pre class="literal-block">
+$ sudo easy_install install pip
+
+$ sudo pip install pgcli
+</pre>
+<p>If you're having trouble getting this installed please feel free to contact me.</p>
 </div>
 </div>
 

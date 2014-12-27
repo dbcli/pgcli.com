@@ -3,4 +3,34 @@ Home
 
 :slug: index
 
-This is a test page.
+Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting.
+
+.. image:: {filename}/images/image01.png
+
+Quick Start
+===========
+
+If you already know how to install python pacakges, then you can simply do:
+
+::
+
+    $ pip install pgcli
+
+Usage
+=====
+
+:: 
+
+    $ pgcli [database_name]
+
+    or
+
+    $ pgcli postgresql://[user[:password]@][netloc][:port][/dbname] 
+
+Examples: 
+
+:: 
+
+    $ pgcli local_database
+
+    $ pgcli postgres://amjith:pa$$w0rd@example.com:5432/app_db
