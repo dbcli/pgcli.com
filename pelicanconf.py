@@ -39,3 +39,6 @@ PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 
 DIRECT_TEMPLATES = {}
+
+STATIC_PATHS = {'images', 'extra/CNAME'}
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
