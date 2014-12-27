@@ -1,0 +1,6 @@
+Home
+####
+
+:slug: index
+
+This is a test page.

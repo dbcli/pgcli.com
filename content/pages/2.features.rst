@@ -1,0 +1,11 @@
+Screenshots
+###########
+
+:slug: features
+
+* Auto-completion.
+* Syntax-highlighting.
+* Smart-completion.
+* psql special commands.
+* Multi-line support.
+* Pipe output to less.

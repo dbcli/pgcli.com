@@ -1,0 +1,48 @@
+Promise
+#######
+
+:slug: promise
+
+Hi, I'm Amjith_. I refuse to be an unpleasant individual on the internet.
+
+I will:
+-------
+
+* Be nice.
+* Be courteous.
+* Be respectful.
+* Have an open mind.
+* Never be condescending.
+* Never discriminate (even if you like Emacs and Windows).
+
+If I ever fail one of the tenets above, please let me know. After all, I am
+human.
+
+Exception:
+----------
+
+There is one exception. 
+
+I don't react well when someone is being aggressive or insulting. I will
+politely let you know that you're being unpleasant and I will stop responding.
+
+Caveats:
+--------
+
+1. English is not my native tongue. I'm constantly working to improve my
+   english, but I still make grammatical errors when I write. 
+
+2. I also don't fully grasp most slangs, but it never stops me from using it
+   ;).  Here's an example, until very recently I thought 'pretty good' meant
+   'very good'. So I would compliment my friends that they did a 'pretty good'
+   job without knowing that I was mildly insulting them. I'm told 'pretty good'
+   means not quite good enough or there is room for improvement.
+
+3. I think I'm funny (no, I think I'm hilarious). Sometimes that might come
+   across negatively without proper context. If anything I say offends you,
+   please let me know, I'm always learning.
+
+But this is not a cop out, I'd still appreciate if you call me out when I make
+a faux paus. 
+
+.. _Amjith: https://github.com/amjith 

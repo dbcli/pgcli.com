@@ -1,0 +1,41 @@
+Thanks
+######
+
+:slug: thanks
+
+Libraries:
+----------
+
+`Python Prompt Toolkit`_ - An awesome library for building interactive command line interfaces.
+
+Click_ - Basic building blocks for a CLI.
+
+Tabulate_ - Pretty printing tabular data. 
+
+Psycopg_ - A solid library for talking to postgres. 
+
+Pygments_ - Syntax highlighting. 
+
+.. _`Python Prompt Toolkit`: https://github.com/jonathanslenders/python-prompt-toolkit
+.. _Click: http://click.pocoo.org/3/
+.. _Tabulate: https://pypi.python.org/pypi/tabulate
+.. _Psycopg: http://initd.org/psycopg/
+.. _Pygments: http://pygments.org/
+
+Beta Testers:
+-------------
+
+Brave beta testers who tried out pgcli at its infancy and gave me awesome feedback.
+
+* `Iryna Truong`_
+* `Jan Urbański`_
+* `Jonathan Slenders`_ 
+  
+Contributors:
+-------------
+
+* `Iryna Truong`_
+
+.. _`Iryna Truong`: https://github.com/j-bennet
+.. _`Jan Urbański`: https://github.com/wulczer
+.. _`Jonathan Slenders`: https://github.com/jonathanslenders 

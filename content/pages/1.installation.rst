@@ -1,0 +1,21 @@
+Installation
+############
+
+:slug: installation
+
+Quick start:
+------------
+pip install pgcli
+
+Detailed:
+---------
+
+Linux:
+~~~~~~
+
+Check if pip is available. If not install it via apt-get or rpm 
+
+Mac OS X:
+~~~~~~~~~
+
+Check if pip is installed. If not install it via easy_install. 
