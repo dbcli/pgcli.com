@@ -25,12 +25,20 @@ Pygments_ - Syntax highlighting.
 Beta Testers:
 -------------
 
-Brave beta testers who tried out pgcli at its infancy and gave me awesome feedback.
+Brave beta testers who tried out pgcli at its infancy and gave me awesome
+feedback.
 
 * `Iryna Truong`_
 * `Jan Urbański`_
 * `Jonathan Slenders`_ 
-  
+
+If you'd like to send feedback, please send me an email_, tweet_ or file a
+github issue_. 
+
+.. _email: mailto:amjith[dot]r[at]gmail.com
+.. _tweet: http://twitter.com/amjithr
+.. _issue: https://github.com/amjith/pgcli/issues 
+
 Contributors:
 -------------
 
