@@ -28,7 +28,7 @@ Beta Testers:
 Brave beta testers who tried out pgcli at its infancy and gave me awesome
 feedback.
 
-* `Iryna Truong`_
+* `Iryna Cherniavska`_
 * `Jan Urbański`_
 * `Jonathan Slenders`_ 
 
@@ -42,8 +42,8 @@ github issue_.
 Contributors:
 -------------
 
-* `Iryna Truong`_
+* `Iryna Cherniavska`_
 
-.. _`Iryna Truong`: https://github.com/j-bennet
+.. _`Iryna Cherniavska`: https://github.com/j-bennet
 .. _`Jan Urbański`: https://github.com/wulczer
 .. _`Jonathan Slenders`: https://github.com/jonathanslenders 

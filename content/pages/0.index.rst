@@ -21,16 +21,8 @@ Usage
 
 :: 
 
-    $ pgcli [database_name]
-
-    or
-
-    $ pgcli postgresql://[user[:password]@][netloc][:port][/dbname] 
-
-Examples: 
-
-:: 
-
     $ pgcli local_database
+    
+    or
 
     $ pgcli postgres://amjith:pa$$w0rd@example.com:5432/app_db
