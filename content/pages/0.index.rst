@@ -7,6 +7,7 @@ Pgcli is a command line interface for Postgres with auto-completion and syntax h
 
 .. image:: {filename}/images/image01.png
    :alt: Screenshot
+   :width: 750px
 
 Quick Start
 ===========
