@@ -3,9 +3,79 @@ Screenshots
 
 :slug: features
 
-* Auto-completion.
-* Syntax-highlighting.
-* Smart-completion.
-* psql special commands.
-* Multi-line support.
-* Pipe output to less.
+Auto-completion
+---------------
+  
+Simple completions such as keywords and sql-functions.
+
+.. image:: {filename}/images/keywords.png
+   :alt: Keyword Completion
+   :align: center
+   :width: 750px
+
+Smart-completion
+----------------
+
+Table name completions after the 'FROM' keyword.
+
+.. image:: {filename}/images/tables.png
+   :alt: Table Names
+   :align: center
+   :width: 750px
+
+Column name completions once a table is recognized.
+
+.. image:: {filename}/images/columns.png
+   :alt: Column Names
+   :align: center
+   :width: 750px
+
+Alias support
+-------------
+
+Column completions will work even when table names are aliased.
+
+.. image:: {filename}/images/alias.png
+   :alt: Alias Resolution
+   :align: center
+   :width: 750px
+
+Syntax-highlighting
+-------------------
+
+Syntax highlighting for sql.
+
+.. image:: {filename}/images/syntax.png
+   :alt: Syntax Highlighting
+   :align: center
+   :width: 750px
+
+Special commands
+----------------
+
+Limited support for some of psql's powerful back-slash commands.
+
+.. image:: {filename}/images/special_commands.png
+   :alt: Special Commands
+   :align: center
+   :width: 750px
+
+Multi-line
+----------
+
+F3 key will toggle multi-line support. In multi-line mode a semi-colon is needed to end a command.
+
+.. image:: {filename}/images/multi_line.png
+   :alt: Special Commands
+   :align: center
+   :width: 750px
+
+Pager
+-----
+
+Output of an sql command is automatically piped through `less` command.
+
+.. image:: {filename}/images/pager.png
+   :alt: Special Commands
+   :align: center
+   :width: 750px
