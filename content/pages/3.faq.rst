@@ -23,7 +23,7 @@ knows the answers for them.
 4. Why is this not version 1.0? 
 
    The backbone of pgcli is Python-Prompt-Toolkit. That library is still
-   evolving, so I'm hesitant to mark pgcli as 1.0. I'l probably release v1.0
+   evolving, so I'm hesitant to mark pgcli as 1.0. I'll probably release v1.0
    when Python-Prompt-Toolkit goes 1.0.
 
 5. What license are you using? 
@@ -32,7 +32,7 @@ knows the answers for them.
 
 6. How can I get support for pgcli?
 
-   The best resource at the moment is to use the github issues page for this project. 
+   The best resource at the moment is to use the Github Issues page for this project. 
    https://github.com/amjith/pgcli/issues.
 
 7. I found a bug, what do I do? 
@@ -50,11 +50,11 @@ knows the answers for them.
 9. I want to contribute to this project, how do I do that? 
 
    Awesome! Here's a `developer guide <{filename}/pages/4.develop.rst>`_ that
-   provides basice info on getting started with local development. You're also
+   provides basic info on getting started with local development. You're also
    welcome to `contact <{filename}/pages/7.contact.rst>`_ me, if you need some
    help getting started.
     
 10. What's your favorite cuisine? 
 
-    South Indian, North Indian, Thai, Mexican, Ethiopian, Japanese, Chinese,
+    South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian, Japanese, Chinese,
     Sandwiches, Salads. In that order.
