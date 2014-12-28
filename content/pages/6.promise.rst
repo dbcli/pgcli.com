@@ -3,7 +3,7 @@ Promise
 
 :slug: promise
 
-Hi, I'm Amjith_. I am the author of pgcli_. 
+Hi, I'm Amjith_. I am the author of pgcli_, and this is my promise.
 
 I will:
 -------
@@ -17,6 +17,8 @@ I will:
 
 If I ever fail one of the tenets above, please let me know. After all, I am
 human.
+
+So please get in touch, I'd love to hear from you.
 
 Exception:
 ----------
