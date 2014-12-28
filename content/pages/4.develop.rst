@@ -1,5 +1,7 @@
-Dev Guide
-#########
+Develop
+#######
+
+:slug: develop
 
 This is a guide for developers who would like to contribute to this project.
 

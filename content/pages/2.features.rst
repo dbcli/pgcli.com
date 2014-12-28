@@ -1,5 +1,5 @@
-Screenshots
-###########
+Features
+########
 
 :slug: features
 

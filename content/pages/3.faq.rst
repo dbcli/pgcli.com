@@ -4,4 +4,54 @@ FAQ
 These are some questions that the author wishes everyone would ask, since he
 knows the answers for them. 
 
+1. Why did you write pgcli? What's your motivation?
 
+   Bpython, Python Prompt Toolkit.
+
+2. Will there be an equivalent of this for Sqlite?
+   
+   Probably. Now that I've worked out the hard parts (sqlcompletion and special
+   commands), I'd like to write an sqlite CLI. But if you're interested in
+   doing it, I'd be happy to help you as well.
+
+3. Will there be an equivalent of this for MySql?
+
+   Probably. Now that I've worked out the hard parts (sqlcompletion and special
+   commands), I'd like to write a MySql CLI. But if you're interested in
+   doing it, I'd be happy to help you as well.
+
+4. Why is this not version 1.0? 
+
+   The backbone of pgcli is Python-Prompt-Toolkit. That library is still
+   evolving, so I'm hesitant to mark pgcli as 1.0. I'l probably release v1.0
+   when Python-Prompt-Toolkit goes 1.0.
+
+5. What license are you using? 
+
+   BSD 3-clause license. https://github.com/amjith/pgcli/blob/master/LICENSE.txt
+
+6. How can I get support for pgcli?
+
+7. I found a bug, what do I do? 
+
+   I'm sorry you encountered a bug. Please file a bug on Github Issues for this
+   project. https://github.com/amjith/pgcli/issues.
+
+8. I have a feature request, what do I do? 
+
+   Great! File request on Github Issues for this project.
+   https://github.com/amjith/pgcli/issues. Or you can always try contributing
+   the feature yourself. Don't hesitate to contact me if you need help getting
+   started.
+
+9. I want to contribute to this project, how do I do that? 
+
+   Awesome! Here's a `developer guide <{filename}/pages/develop.rst>`_ that
+   provides basice info on getting started with local development. You're also
+   welcome to `contact <{filename}/pages/contact.rst>`_ me, if you need some
+   help getting started.
+    
+10. What's your favorite cuisine? 
+
+    South Indian, North Indian, Thai, Mexican, Ethiopian, Japanese, Chinese,
+    Sandwiches, Salads. In that order.
