@@ -14,17 +14,17 @@ Quick Start
 
 If you already know how to install python pacakges, then you can simply do:
 
-::
+.. code:: bash
 
     $ pip install pgcli
 
 Usage
 =====
 
-:: 
+.. code:: bash
 
     $ pgcli local_database
     
     or
 
-    $ pgcli postgres://amjith:pa$$w0rd@example.com:5432/app_db
+    $ pgcli postgres://amjith:passw0rd@example.com:5432/app_db

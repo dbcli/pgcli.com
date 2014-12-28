@@ -43,8 +43,8 @@ to you.</p>
 <p>In order to keep your fork up to date with any changes from mainline, add a new
 git remote to your local copy called 'upstream' and point it to the main pgcli
 repo.</p>
-<pre class="literal-block">
-$ git remote add upstream git&#64;github.com:amjith/pgcli.git
+<pre class="code bash literal-block">
+<span class="nv">$ </span>git remote add upstream git&#64;github.com:amjith/pgcli.git
 </pre>
 <p>Once the 'upstream' end point is added you can then periodically do a <tt class="docutils literal">git
 pull upstream master</tt> to update your local copy and then do a <tt class="docutils literal">git push
@@ -58,12 +58,12 @@ will help you get started.</p>
 <p>Create a virtualenv (let's call it pgcli-dev). Once the virtualenv is activated
 <cite>cd</cite> into the local clone of pgcli folder and install pgcli using pip as
 follows:</p>
-<pre class="literal-block">
-$ pip install --editable .
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install --editable .
 
 or
 
-$ pip install -e .
+<span class="nv">$ </span>pip install -e .
 </pre>
 <p>This will install the necessary dependencies as well as install pgcli from the
 working folder into the virtualenv. By installing it using <cite>pip install -e</cite>

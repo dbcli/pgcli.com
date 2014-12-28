@@ -9,7 +9,7 @@ Quick start:
 If you already know how to install python packages, then you can simply do:
 You might need ``sudo``.
 
-::
+.. code:: bash
 
     $ pip install pgcli
 
@@ -26,7 +26,7 @@ but it is superseded by pip.
 
 Check if `pip` is installed on the system.
 
-:: 
+.. code:: bash
 
     $ which pip
 
@@ -39,19 +39,19 @@ Linux:
 
 Debian based systems (Debian, Ubuntu, Mint etc)
 
-::
+.. code:: bash
 
     $ sudo apt-get install python-pip
 
 For Redhat based systems (Fedora, Centos, RHEL etc)
 
-::
+.. code:: bash
 
     $ sudo yum install python-pip
 
 After this you can simply do:
 
-::
+.. code:: bash
 
     $ sudo pip install pgcli
 
@@ -61,7 +61,7 @@ Mac OS X:
 Most OS X systems comes pre-installed with python and ``easy_install``. You can
 use easy_install to install ``pip``.
 
-:: 
+.. code:: bash
 
     $ sudo easy_install install pip
     

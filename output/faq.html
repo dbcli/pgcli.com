@@ -30,49 +30,72 @@
     <p>These are some questions that the author wishes everyone would ask, since he
 knows the answers for them.</p>
 <ol class="arabic">
-<li><p class="first">Why did you write pgcli? What's your motivation?</p>
-<p>Bpython, Python Prompt Toolkit.</p>
+<li><p class="first"><strong>Why does pgcli exist?</strong></p>
+<p>I'm a huge fan of CLIs. Especially REPLs. When I first encountered
+<a class="reference external" href="http://www.bpython-interpreter.org/">BPython</a>, I fell in love with it. BPython is a Python REPL that has
+auto-completion, syntax-highlighting and displays the docstring of functions
+as you type. Once you get used to that level of pampering, all other REPLs
+start to look like <a class="reference external" href="http://en.wikipedia.org/wiki/Computer_terminal#Dumb_terminals">Dumb Terminals</a>.</p>
+<p>When I started using <a class="reference external" href="http://www.postgresql.org/docs/9.2/static/app-psql.html">psql</a> for interacting with my Postgres database, I
+yearned for a BPython equivalent for psql.</p>
+<p>One fine day I got a twitter DM from <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a> asking me if I'd
+be interested in trying a new Python library that he's working on called
+<a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">Python-Prompt-Toolkit</a>. This library provided a way to write CLIs without
+having to deal with curses and had the requisite tools for doing
+auto-completion and syntax-highlighting. So I jumped at the opportunity to
+try it out. After I got myself familiarized, I started writing pgcli to
+scratch my own itch.</p>
+<p>So this app exists because Jonathan was kind enough to request my feedback.</p>
 </li>
-<li><p class="first">Will there be an equivalent of this for Sqlite?</p>
+</ol>
+<ol class="arabic" start="2">
+<li><p class="first"><strong>Will there be an equivalent of this for Sqlite?</strong></p>
 <p>Probably. Now that I've worked out the hard parts (sqlcompletion and special
-commands), I'd like to write an sqlite CLI. But if you're interested in
-doing it, I'd be happy to help you as well.</p>
+commands), I'd like to write an Sqlite CLI. But I'm not sure if I'll have
+the time to do it in the near future. But if you're interested in doing it,
+I'd be happy to help you.</p>
 </li>
-<li><p class="first">Will there be an equivalent of this for MySql?</p>
+<li><p class="first"><strong>Will there be an equivalent of this for MySql?</strong></p>
 <p>Probably. Now that I've worked out the hard parts (sqlcompletion and special
-commands), I'd like to write a MySql CLI. But if you're interested in
-doing it, I'd be happy to help you as well.</p>
+commands), I'd like to write an MySql CLI. But I'm not sure if I'll have
+the time to do it in the near future. But if you're interested in doing it,
+I'd be happy to help you.</p>
 </li>
-<li><p class="first">Why is this not version 1.0?</p>
-<p>The backbone of pgcli is Python-Prompt-Toolkit. That library is still
-evolving, so I'm hesitant to mark pgcli as 1.0. I'll probably release v1.0
-when Python-Prompt-Toolkit goes 1.0.</p>
+<li><p class="first"><strong>Why is this not version 1.0?</strong></p>
+<p>The backbone of pgcli is <a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">Python-Prompt-Toolkit</a>. Prompt Toolkit is awesome at
+what it does, but the APIs for the library are still evolving. So I'm
+hesitant to mark pgcli as 1.0, since pgcli will also be changing to keep up
+with the changes in Prompt Tookit. I'll probably release v1.0 when
+Python-Prompt-Toolkit goes 1.0.</p>
 </li>
-<li><p class="first">What license are you using?</p>
+</ol>
+<ol class="arabic" start="5">
+<li><p class="first"><strong>What is the license for pgcli?</strong></p>
 <p>BSD 3-clause license. <a class="reference external" href="https://github.com/amjith/pgcli/blob/master/LICENSE.txt">https://github.com/amjith/pgcli/blob/master/LICENSE.txt</a></p>
 </li>
-<li><p class="first">How can I get support for pgcli?</p>
-<p>The best resource at the moment is to use the Github Issues page for this project.
-<a class="reference external" href="https://github.com/amjith/pgcli/issues">https://github.com/amjith/pgcli/issues</a>.</p>
+<li><p class="first"><strong>How can I get support for pgcli?</strong></p>
+<p>The best resource at the moment is to use the Github <a class="reference external" href="https://github.com/amjith/pgcli/issues">Issues</a> page for this
+project.</p>
 </li>
-<li><p class="first">I found a bug, what do I do?</p>
-<p>I'm sorry you encountered a bug. Please file a bug on Github Issues for this
-project. <a class="reference external" href="https://github.com/amjith/pgcli/issues">https://github.com/amjith/pgcli/issues</a>.</p>
+<li><p class="first"><strong>I found a bug, what do I do?</strong></p>
+<p>Whoopsie Daisies! I'm sorry you encountered a bug. Please file a bug on
+Github <a class="reference external" href="https://github.com/amjith/pgcli/issues">Issues</a> for this project.</p>
 </li>
-<li><p class="first">I have a feature request, what do I do?</p>
-<p>Great! File request on Github Issues for this project.
-<a class="reference external" href="https://github.com/amjith/pgcli/issues">https://github.com/amjith/pgcli/issues</a>. Or you can always try contributing
-the feature yourself. Don't hesitate to <a class="reference external" href="./contact">contact</a> me if you need help getting started.</p>
+<li><p class="first"><strong>I have a feature request, what do I do?</strong></p>
+<p>Sweet! Open a new item on Github <a class="reference external" href="https://github.com/amjith/pgcli/issues">Issues</a>. Alternatively, you can take a stab
+at implementing the new feature yourself. If you'd like some guidance, I'm
+just an email away. Don't hesitate to <a class="reference external" href="./contact">contact</a> me.</p>
 </li>
-<li><p class="first">I want to contribute to this project, how do I do that?</p>
-<p>Awesome! Here's a <a class="reference external" href="./develop">developer guide</a> that
-provides basic info on getting started with local development. You're also
-welcome to <a class="reference external" href="./contact">contact</a> me, if you need some
-help getting started.</p>
+<li><p class="first"><strong>I want to contribute to this project, how do I do that?</strong></p>
+<p>Awesome! I thought you'd never ask. Here's a <a class="reference external" href="./develop">developer guide</a> that provides basic info on getting
+started with local development. You're also welcome to <a class="reference external" href="./contact">contact</a> me, if you need some help getting
+started.</p>
 </li>
-<li><p class="first">What's your favorite cuisine?</p>
-<p>South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian, Japanese, Chinese,
-Sandwiches, Salads. In that order.</p>
+<li><p class="first"><strong>What's your favorite cuisine?</strong></p>
+<p>What's the point in having an FAQ if I don't include at least one
+frequently asked question. So here it goes:</p>
+<p>South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian,
+Japanese, Chinese, Sandwiches, Salads. In that order.</p>
 </li>
 </ol>
 

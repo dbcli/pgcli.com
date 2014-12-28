@@ -4,57 +4,92 @@ FAQ
 These are some questions that the author wishes everyone would ask, since he
 knows the answers for them. 
 
-1. Why did you write pgcli? What's your motivation?
+1. **Why does pgcli exist?**
 
-   Bpython, Python Prompt Toolkit.
+   I'm a huge fan of CLIs. Especially REPLs. When I first encountered
+   BPython_, I fell in love with it. BPython is a Python REPL that has
+   auto-completion, syntax-highlighting and displays the docstring of functions
+   as you type. Once you get used to that level of pampering, all other REPLs
+   start to look like `Dumb Terminals`_. 
 
-2. Will there be an equivalent of this for Sqlite?
+   When I started using psql_ for interacting with my Postgres database, I
+   yearned for a BPython equivalent for psql. 
+
+   One fine day I got a twitter DM from `Jonathan Slenders`_ asking me if I'd
+   be interested in trying a new Python library that he's working on called
+   `Python-Prompt-Toolkit`_. This library provided a way to write CLIs without
+   having to deal with curses and had the requisite tools for doing
+   auto-completion and syntax-highlighting. So I jumped at the opportunity to
+   try it out. After I got myself familiarized, I started writing pgcli to
+   scratch my own itch. 
+   
+   So this app exists because Jonathan was kind enough to request my feedback. 
+
+.. _BPython: http://www.bpython-interpreter.org/
+.. _`Dumb Terminals`: http://en.wikipedia.org/wiki/Computer_terminal#Dumb_terminals
+.. _psql: http://www.postgresql.org/docs/9.2/static/app-psql.html
+.. _`Jonathan Slenders`: https://github.com/jonathanslenders
+
+2. **Will there be an equivalent of this for Sqlite?**
    
    Probably. Now that I've worked out the hard parts (sqlcompletion and special
-   commands), I'd like to write an sqlite CLI. But if you're interested in
-   doing it, I'd be happy to help you as well.
+   commands), I'd like to write an Sqlite CLI. But I'm not sure if I'll have
+   the time to do it in the near future. But if you're interested in doing it,
+   I'd be happy to help you.
 
-3. Will there be an equivalent of this for MySql?
+3. **Will there be an equivalent of this for MySql?**
 
    Probably. Now that I've worked out the hard parts (sqlcompletion and special
-   commands), I'd like to write a MySql CLI. But if you're interested in
-   doing it, I'd be happy to help you as well.
+   commands), I'd like to write an MySql CLI. But I'm not sure if I'll have
+   the time to do it in the near future. But if you're interested in doing it,
+   I'd be happy to help you.
 
-4. Why is this not version 1.0? 
+4. **Why is this not version 1.0?**
 
-   The backbone of pgcli is Python-Prompt-Toolkit. That library is still
-   evolving, so I'm hesitant to mark pgcli as 1.0. I'll probably release v1.0
-   when Python-Prompt-Toolkit goes 1.0.
+   The backbone of pgcli is `Python-Prompt-Toolkit`_. Prompt Toolkit is awesome at
+   what it does, but the APIs for the library are still evolving. So I'm
+   hesitant to mark pgcli as 1.0, since pgcli will also be changing to keep up
+   with the changes in Prompt Tookit. I'll probably release v1.0 when
+   Python-Prompt-Toolkit goes 1.0.
 
-5. What license are you using? 
+.. _`Python-Prompt-Toolkit`: https://github.com/jonathanslenders/python-prompt-toolkit 
+
+5. **What is the license for pgcli?**
 
    BSD 3-clause license. https://github.com/amjith/pgcli/blob/master/LICENSE.txt
 
-6. How can I get support for pgcli?
+6. **How can I get support for pgcli?**
 
-   The best resource at the moment is to use the Github Issues page for this project. 
-   https://github.com/amjith/pgcli/issues.
+   The best resource at the moment is to use the Github Issues_ page for this
+   project. 
 
-7. I found a bug, what do I do? 
+7. **I found a bug, what do I do?** 
 
-   I'm sorry you encountered a bug. Please file a bug on Github Issues for this
-   project. https://github.com/amjith/pgcli/issues.
+   Whoopsie Daisies! I'm sorry you encountered a bug. Please file a bug on
+   Github Issues_ for this project.
 
-8. I have a feature request, what do I do? 
+8. **I have a feature request, what do I do?** 
 
-   Great! File request on Github Issues for this project.
-   https://github.com/amjith/pgcli/issues. Or you can always try contributing
-   the feature yourself. Don't hesitate to `contact
-   <{filename}/pages/7.contact.rst>`_ me if you need help getting started.
+   Sweet! Open a new item on Github Issues_. Alternatively, you can take a stab
+   at implementing the new feature yourself. If you'd like some guidance, I'm
+   just an email away. Don't hesitate to `contact
+   <{filename}/pages/7.contact.rst>`_ me.
 
-9. I want to contribute to this project, how do I do that? 
+9. **I want to contribute to this project, how do I do that?** 
 
-   Awesome! Here's a `developer guide <{filename}/pages/4.develop.rst>`_ that
-   provides basic info on getting started with local development. You're also
-   welcome to `contact <{filename}/pages/7.contact.rst>`_ me, if you need some
-   help getting started.
+   Awesome! I thought you'd never ask. Here's a `developer guide
+   <{filename}/pages/4.develop.rst>`_ that provides basic info on getting
+   started with local development. You're also welcome to `contact
+   <{filename}/pages/7.contact.rst>`_ me, if you need some help getting
+   started.
     
-10. What's your favorite cuisine? 
+10. **What's your favorite cuisine?** 
 
-    South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian, Japanese, Chinese,
-    Sandwiches, Salads. In that order.
+    What's the point in having an FAQ if I don't include at least one 
+    frequently asked question. So here it goes: 
+
+    South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian,
+    Japanese, Chinese, Sandwiches, Salads. In that order. 
+
+.. _Issues: https://github.com/amjith/pgcli/issues
+
