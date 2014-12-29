@@ -73,7 +73,7 @@ F3 key will toggle multi-line support. In multi-line mode a semi-colon is needed
 Pager
 -----
 
-Output of an sql command is automatically piped through `less` command.
+Output of an sql command is automatically piped through ``less`` command.
 
 .. image:: {filename}/images/pager.png
    :alt: Special Commands

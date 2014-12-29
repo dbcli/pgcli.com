@@ -53,7 +53,7 @@ follows:
     $ pip install -e .
 
 This will install the necessary dependencies as well as install pgcli from the
-working folder into the virtualenv. By installing it using `pip install -e`
+working folder into the virtualenv. By installing it using ``pip install -e``
 we've linked the pgcli installation with the working copy. So any changes made
 to the code is immediately available in the installed version of pgcli. This
 makes it easy to change something in the code, launch pgcli and check the

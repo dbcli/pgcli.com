@@ -21,10 +21,10 @@ Detailed:
 ---------
 
 For installing Python packages it is recommended to use the package manager
-called `pip`. There is also an older package manager known as ``easy_install``
-but it is superseded by pip.
+called ``pip``. There is also an older package manager known as
+``easy_install`` but it is superseded by pip.
 
-Check if `pip` is installed on the system.
+Check if ``pip`` is installed on the system.
 
 .. code:: bash
 
