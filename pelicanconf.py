@@ -30,7 +30,7 @@ SOCIAL = (('twitter', 'http://twitter.com/amjithr'),
           ('github', 'http://github.com/amjith/pgcli'),
          )
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 4
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
