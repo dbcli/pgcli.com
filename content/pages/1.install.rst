@@ -67,4 +67,5 @@ use easy_install to install ``pip``.
     
     $ sudo pip install pgcli
 
-If you're having trouble getting this installed please feel free to contact me. 
+If you're having trouble getting this installed please feel free to `contact
+<{filename}/pages/6.about.rst>`_ me. 

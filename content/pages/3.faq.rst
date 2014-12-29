@@ -73,14 +73,14 @@ knows the answers for them.
    Sweet! Open a new item on Github Issues_. Alternatively, you can take a stab
    at implementing the new feature yourself. If you'd like some guidance, I'm
    just an email away. Don't hesitate to `contact
-   <{filename}/pages/7.contact.rst>`_ me.
+   <{filename}/pages/6.about.rst>`_ me.
 
 9. **I want to contribute to this project, how do I do that?** 
 
    Awesome! I thought you'd never ask. Here's a `developer guide
    <{filename}/pages/4.develop.rst>`_ that provides basic info on getting
    started with local development. You're also welcome to `contact
-   <{filename}/pages/7.contact.rst>`_ me, if you need some help getting
+   <{filename}/pages/6.about.rst>`_ me, if you need some help getting
    started.
     
 10. **What's your favorite cuisine?** 
