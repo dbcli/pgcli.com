@@ -3,6 +3,9 @@ Thanks
 
 :slug: thanks
 
+``pgcli`` was made possible by the existence of these wonderful people and
+libraries. 
+
 Libraries:
 ----------
 
