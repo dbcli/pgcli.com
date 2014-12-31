@@ -18,10 +18,8 @@ I'll try my best to answer you.
 .. _Twitter: https://twitter.com/amjithr 
 .. _Github: https://github.com/amjith
 
-Promise
-=======
-
-This is my promise.
+Responsibility
+==============
 
 I will:
 -------

@@ -63,7 +63,8 @@ Limited support for some of psql's powerful back-slash commands.
 Multi-line
 ----------
 
-F3 key will toggle multi-line support. In multi-line mode a semi-colon is needed to end a command.
+F3 key will toggle multi-line support.In multi-line mode you can break your sql
+statement into multiple lines. A semi-colon is needed to end the line. 
 
 .. image:: {filename}/images/multi_line.png
    :alt: Special Commands

@@ -7,7 +7,7 @@ Quick start:
 ------------
 
 If you already know how to install python packages, then you can simply do:
-You might need ``sudo``.
+You might need ``sudo``. 
 
 .. code:: bash
 
@@ -37,10 +37,16 @@ methods.
 Linux:
 ~~~~~~
 
+``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. You will
+also need C compiler installed on your system in order to compile the required
+files for psycopg.
+
 Debian based systems (Debian, Ubuntu, Mint etc)
 
 .. code:: bash
 
+    $ sudo apt-get install libpq-dev
     $ sudo apt-get install python-pip
 
 For Redhat based systems (Fedora, Centos, RHEL etc)
@@ -57,6 +63,24 @@ After this you can simply do:
 
 Mac OS X:
 ~~~~~~~~~
+
+``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. The
+easiest way to get the necessary libraries is to install postgres on your
+system. 
+
+.. code:: bash
+
+    $ brew install postgresql
+
+You will also need C compiler installed on your system in order to compile the
+required files for psycopg. So you will need to install XCode and then install
+the CommandLineTools which will install gcc or an equivalent C compiler on your
+system. I typically do the following: 
+
+.. code:: bash
+
+   $ xcode-select --install     # This will install the command line tools for xcode.
 
 Most OS X systems comes pre-installed with python and ``easy_install``. You can
 use easy_install to install ``pip``.
