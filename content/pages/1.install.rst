@@ -37,16 +37,10 @@ methods.
 Linux:
 ~~~~~~
 
-``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
-psycopg, you will need you will need libpq installed on your system. You will
-also need C compiler installed on your system in order to compile the required
-files for psycopg.
-
 Debian based systems (Debian, Ubuntu, Mint etc)
 
 .. code:: bash
 
-    $ sudo apt-get install libpq-dev
     $ sudo apt-get install python-pip
 
 For Redhat based systems (Fedora, Centos, RHEL etc)
@@ -55,7 +49,20 @@ For Redhat based systems (Fedora, Centos, RHEL etc)
 
     $ sudo yum install python-pip
 
-After this you can simply do:
+``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. You will
+also need C compiler installed on your system in order to compile the required
+files for psycopg.
+
+.. code:: bash
+
+    $ sudo apt-get install libpq-dev    # debian
+
+    or 
+
+    $ sudo yum install postgresql-devel   # redhat
+
+Now that the required dependencies are satisfied you are ready to install ``pgcli``.
 
 .. code:: bash
 

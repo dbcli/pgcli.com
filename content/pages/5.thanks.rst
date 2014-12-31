@@ -15,6 +15,8 @@ Click_ - Basic building blocks for a CLI.
 
 Tabulate_ - Pretty printing tabular data. 
 
+Sqlparse_ - Sql Parsing library.
+
 Psycopg_ - A solid library for talking to postgres. 
 
 Pygments_ - Syntax highlighting. 
@@ -24,6 +26,7 @@ Pygments_ - Syntax highlighting.
 .. _Tabulate: https://pypi.python.org/pypi/tabulate
 .. _Psycopg: http://initd.org/psycopg/
 .. _Pygments: http://pygments.org/
+.. _Sqlparse: https://pypi.python.org/pypi/sqlparse
 
 Beta Testers:
 -------------

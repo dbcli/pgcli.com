@@ -60,13 +60,38 @@ methods.</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>sudo yum install python-pip
 </pre>
-<p>After this you can simply do:</p>
+<p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. You will
+also need C compiler installed on your system in order to compile the required
+files for psycopg.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>sudo apt-get install libpq-dev    <span class="c"># debian
+</span>
+or
+
+<span class="nv">$ </span>sudo yum install postgresql-devel   <span class="c"># redhat</span>
+</pre>
+<p>Now that the required dependencies are satisfied you are ready to install <tt class="docutils literal">pgcli</tt>.</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>sudo pip install pgcli
 </pre>
 </div>
 <div class="section" id="mac-os-x">
 <h3>Mac OS X:</h3>
+<p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. The
+easiest way to get the necessary libraries is to install postgres on your
+system.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>brew install postgresql
+</pre>
+<p>You will also need C compiler installed on your system in order to compile the
+required files for psycopg. So you will need to install XCode and then install
+the CommandLineTools which will install gcc or an equivalent C compiler on your
+system. I typically do the following:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>xcode-select --install     <span class="c"># This will install the command line tools for xcode.</span>
+</pre>
 <p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
 use easy_install to install <tt class="docutils literal">pip</tt>.</p>
 <pre class="code bash literal-block">
