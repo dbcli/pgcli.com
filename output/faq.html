@@ -46,8 +46,6 @@ try it out. After I got myself familiarized, I started writing pgcli to
 scratch my own itch.</p>
 <p>So this app exists because Jonathan was kind enough to request my feedback.</p>
 </li>
-</ol>
-<ol class="arabic" start="2">
 <li><p class="first"><strong>Will there be an equivalent of this for Sqlite?</strong></p>
 <p>Probably. Now that I've worked out the hard parts (sqlcompletion and special
 commands), I'd like to write an Sqlite CLI. But I'm not sure if I'll have
@@ -60,6 +58,24 @@ commands), I'd like to write an MySql CLI. But I'm not sure if I'll have
 the time to do it in the near future. But if you're interested in doing it,
 I'd be happy to help you.</p>
 </li>
+<li><p class="first"><strong>What's the difference between Smart Completion and Naive Completion?</strong></p>
+<p>Naive Completion is a collection of all the keywords, functions, table names
+and column names. As you start typing this collection will be narrorwed down
+based on the text that has been types so far.</p>
+<p>Smart Completion tries to do context sensitive completion. For eg: 'SELECT *
+FROM ' knows that the only items relevant after the FROM keyword is a table
+name, so it only suggests items from a collection of table names.</p>
+</li>
+<li><p class="first"><strong>How 'smart' is the Smart Completion?</strong></p>
+<p>Smart Completion uses the <a class="reference external" href="https://pypi.python.org/pypi/sqlparse">Sqlparse</a> library to tokenize the sql statment and
+uses heuristics to suggest context sensitive completion. It can handle
+nearly 80% of scenarios (in my testing). But there are still some corner
+cases where it will suggest only keywords when you might be looking for
+columns or tables. So it could get frustrating when it refuses to provide
+completions from a different category. In those scenarios, I tend to turn it
+off (using the F2 key) and switch to Naive completion which suggests words
+from all categories.</p>
+</li>
 <li><p class="first"><strong>Why is this not version 1.0?</strong></p>
 <p>The backbone of pgcli is <a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">Python-Prompt-Toolkit</a>. Prompt Toolkit is awesome at
 what it does, but the APIs for the library are still evolving. So I'm
@@ -67,8 +83,6 @@ hesitant to mark pgcli as 1.0, since pgcli will also be changing to keep up
 with the changes in Prompt Tookit. I'll probably release v1.0 when
 Python-Prompt-Toolkit goes 1.0.</p>
 </li>
-</ol>
-<ol class="arabic" start="5">
 <li><p class="first"><strong>What is the license for pgcli?</strong></p>
 <p>BSD 3-clause license. <a class="reference external" href="https://github.com/amjith/pgcli/blob/master/LICENSE.txt">https://github.com/amjith/pgcli/blob/master/LICENSE.txt</a></p>
 </li>
@@ -91,8 +105,8 @@ started with local development. You're also welcome to <a class="reference exter
 started.</p>
 </li>
 <li><p class="first"><strong>What's your favorite cuisine?</strong></p>
-<p>What's the point in having an FAQ if I don't include at least one
-frequently asked question. So here it goes:</p>
+<p>What's the point in having an FAQ if I don't include at least one frequently
+asked question. So here it goes:</p>
 <p>South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian,
 Japanese, Chinese, Sandwiches, Salads. In that order.</p>
 </li>
