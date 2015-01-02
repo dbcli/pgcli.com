@@ -36,8 +36,7 @@ you could test it out and let me know.</p>
 </div>
 <div class="section" id="quick-start">
 <h2>Quick start:</h2>
-<p>If you already know how to install python packages, then you can simply do:
-You might need <tt class="docutils literal">sudo</tt>.</p>
+<p>If you already know how to install python packages, then you can do:</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>pip install pgcli
 
@@ -45,12 +44,13 @@ or
 
 <span class="nv">$ </span>easy_install install pgcli
 </pre>
+<p>You might need <tt class="docutils literal">sudo</tt>.</p>
 </div>
 <div class="section" id="detailed">
 <h2>Detailed:</h2>
-<p>For installing Python packages it is recommended to use the package manager
-called <tt class="docutils literal">pip</tt>. There is also an older package manager known as
-<tt class="docutils literal">easy_install</tt> but it is superseded by pip.</p>
+<p>The recommended way to install Python packages is to use a package managed
+called called <tt class="docutils literal">pip</tt>. There is also an older package manager known as
+<tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
 <p>Check if <tt class="docutils literal">pip</tt> is installed on the system.</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>which pip
@@ -58,6 +58,32 @@ called <tt class="docutils literal">pip</tt>. There is also an older package man
 <p>If the above command returns an error, then you do not have pip installed on
 your computer. You can install pip for your OS using one of the following
 methods.</p>
+<div class="section" id="mac-os-x">
+<h3>Mac OS X:</h3>
+<p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
+use easy_install to install <tt class="docutils literal">pip</tt>.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>sudo easy_install install pip
+</pre>
+<p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
+psycopg, you will need libpq installed on your system. The easiest way to get
+the necessary libraries, is to install postgresql on your system.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>brew install postgresql
+</pre>
+<p>You will also need C compiler installed on your system in order to compile the
+required files for psycopg. Install XCode from AppStore and then install the
+CommandLineTools which will install gcc or an equivalent C compiler on your
+system. I typically do the following:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>xcode-select --install   <span class="c"># This will install the command line tools for xcode.</span>
+</pre>
+<p>Now that the required dependencies are satisfied you are ready to install
+<tt class="docutils literal">pgcli</tt>.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>sudo pip install pgcli
+</pre>
+</div>
 <div class="section" id="linux">
 <h3>Linux:</h3>
 <p>Debian based systems (Debian, Ubuntu, Mint etc)</p>
@@ -68,10 +94,10 @@ methods.</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>sudo yum install python-pip
 </pre>
-<p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
-psycopg, you will need you will need libpq installed on your system. You will
-also need C compiler installed on your system in order to compile the required
-files for psycopg.</p>
+<p>Pgcli uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
+psycopg, you will need you will need libpq installed on your system. Since
+<tt class="docutils literal">psycopg</tt> is a C extension for Python, a C compiler is needed to install it
+on your system.</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>sudo apt-get install libpq-dev    <span class="c"># debian
 </span>
@@ -79,32 +105,9 @@ or
 
 <span class="nv">$ </span>sudo yum install postgresql-devel   <span class="c"># redhat</span>
 </pre>
-<p>Now that the required dependencies are satisfied you are ready to install <tt class="docutils literal">pgcli</tt>.</p>
+<p>Now that the required dependencies are satisfied you are ready to install
+<tt class="docutils literal">pgcli</tt>.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo pip install pgcli
-</pre>
-</div>
-<div class="section" id="mac-os-x">
-<h3>Mac OS X:</h3>
-<p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
-psycopg, you will need you will need libpq installed on your system. The
-easiest way to get the necessary libraries is to install postgres on your
-system.</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>brew install postgresql
-</pre>
-<p>You will also need C compiler installed on your system in order to compile the
-required files for psycopg. So you will need to install XCode and then install
-the CommandLineTools which will install gcc or an equivalent C compiler on your
-system. I typically do the following:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>xcode-select --install     <span class="c"># This will install the command line tools for xcode.</span>
-</pre>
-<p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
-use easy_install to install <tt class="docutils literal">pip</tt>.</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>sudo easy_install install pip
-
 <span class="nv">$ </span>sudo pip install pgcli
 </pre>
 <p>If you're having trouble getting this installed please feel free to <a class="reference external" href="./about">contact</a> me.</p>
