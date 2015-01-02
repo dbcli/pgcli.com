@@ -3,7 +3,7 @@ About
 
 :slug: about
 
-Hi, I'm Amjith_. I am the author of pgcli_. 
+Hi, I'm Amjith_, the author of pgcli_. 
 
 If you have feedback about pgcli, this site or general python questions, feel
 free to contact me. 

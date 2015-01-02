@@ -18,6 +18,9 @@ If you already know how to install python pacakges, then you can simply do:
 
     $ pip install pgcli
 
+If you're having trouble with the quick start, check the install_ page for
+detailed instructions.
+
 Usage
 =====
 
@@ -28,3 +31,5 @@ Usage
     or
 
     $ pgcli postgres://amjith:passw0rd@example.com:5432/app_db
+
+.. _install: {filename}/pages/1.install.rst
