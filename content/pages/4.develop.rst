@@ -11,27 +11,48 @@ heart felt thanks for contributing.
 GitHub Workflow
 ---------------
 
-If you already know how to work with github, you can safely skip this section.
+If you already know how to fork a project and send pull requests to it using
+github, you can safely skip this section.
 
-`Fork the project <https://github.com/amjith/pgcli>`_ in github.  Then
-clone your fork into your computer (``git clone <url-for-your-fork>``).  Make
-the changes and create the commits in your local machine. Then push those
-changes to your fork. Then click on the pull request icon on github and create
-a new pull request. Add a description about the change and send it along. I
-promise to review the pull request in a reasonable window of time and get back
-to you. 
+Github help has a pretty detailed documentation on how to use Github to fork
+and send pull requests to a repository.
+https://help.github.com/articles/fork-a-repo/
 
-In order to keep your fork up to date with any changes from mainline, add a new
-git remote to your local copy called 'upstream' and point it to the main pgcli
-repo.
+The basic steps are:
 
-.. code:: bash
+#. Fork the pgcli_ project via the github UI. 
 
-   $ git remote add upstream git@github.com:amjith/pgcli.git
+#. Clone your fork to your local machine. 
 
-Once the 'upstream' end point is added you can then periodically do a ``git
-pull upstream master`` to update your local copy and then do a ``git push
-origin master`` to keep your own fork up to date. 
+   .. code:: bash
+
+       git clone git@github.com:<your-username>/pgcli.git
+
+#. Setup a remote called upstread that points to the original pgcli repo. This
+   is to keep your fork in sync with the mainline.
+
+   .. code:: bash
+
+       git remote add upstream git@github.com:amjith/pgcli.git
+
+#. Make the necessary changes in your local machine. Commit and push to your
+   fork. 
+
+   .. code:: bash
+
+       $ git commit 
+
+       $ git push origin 
+
+#. Create a pull request from your fork to the mainline repo using Github UI. 
+
+#. Sync with the main pgcli repo. 
+
+   .. code:: bash
+
+       $ git pull upstream master   # Pull from the main repo to local copy.
+
+       $ git push origin master     # Pushes from local copy to your fork.
 
 Local Development Setup
 -----------------------
@@ -41,7 +62,7 @@ what a virtualenv is, this `guide <http://docs.python-guide.org/en/latest/dev/vi
 will help you get started.
 
 Create a virtualenv (let's call it pgcli-dev). Once the virtualenv is activated
-`cd` into the local clone of pgcli folder and install pgcli using pip as
+``cd`` into the local clone of pgcli folder and install pgcli using pip as
 follows:
 
 .. code:: bash
@@ -58,3 +79,28 @@ we've linked the pgcli installation with the working copy. So any changes made
 to the code is immediately available in the installed version of pgcli. This
 makes it easy to change something in the code, launch pgcli and check the
 effects of your change. 
+
+Tests
+-----
+
+The tests are located in the ``tests`` directory in the pgcli project root.
+
+Tests are written using ``py.test`` testing framework. Install ``py.test`` by
+using ``pip install pytest`` in the virtualenv. Then execute the tests by
+calling ``py.test`` from the root of the project folder. 
+
+A test runner called ``tox`` is used to run the tests in Python 2.6, Python 2.7
+and Python 3.3. You can do ``pip install tox`` and call ``tox`` from the
+project root to run the tests in all 3 python versions.
+
+If you'd like to run just one of the test files (say test_sqlcompletion.py)
+then ``cd`` into the tests folder and execute ``py.test test_sqlcompletion.py``
+to run just the tests from that file or ``tox test_sqlcompletion.py`` to run
+the tests in that file in all three Python versions.
+
+It is highly recommended to make sure the tests are passing in at least one of
+the supported versions of Python before opening the Pull Request.
+
+.. _pgcli: https://github.com/amjith/pgcli
+
+
