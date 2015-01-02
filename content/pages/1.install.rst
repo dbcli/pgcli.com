@@ -4,7 +4,7 @@ Install
 :slug: install
 
 Compatibility:
---------------
+==============
 
 This package is tested on Linux and OS X. I'm confident that it'll work in all
 Unix variants. I have not personally tested this on Windows, but all the
@@ -13,7 +13,7 @@ including Windows. If you have a Windows machine, I'd very much appreciate if
 you could test it out and let me know.
 
 Quick start:
-------------
+============
 
 If you already know how to install python packages, then you can do:
 
@@ -28,7 +28,7 @@ If you already know how to install python packages, then you can do:
 You might need ``sudo``. 
 
 Detailed:
----------
+=========
 
 The recommended way to install Python packages is to use a package managed
 called called ``pip``. There is also an older package manager known as
