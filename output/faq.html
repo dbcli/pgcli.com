@@ -75,6 +75,11 @@ columns or tables. So it could get frustrating when it refuses to provide
 completions from a different category. In those scenarios, I tend to turn it
 off (using the F2 key) and switch to Naive completion which suggests words
 from all categories.</p>
+<p>The code itself is not my proudest work. Writing auto-completion libraries
+are inherently difficult since you're dealing with incomplete input. So the
+parsers can't work effectively in many scenarios. So the code has to
+compensate for those corner cases. Which resulted in a lot of testing and
+patching those cases with one off 'if-conditions'.</p>
 </li>
 <li><p class="first"><strong>Why is this not version 1.0?</strong></p>
 <p>The backbone of pgcli is <a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">Python-Prompt-Toolkit</a>. Prompt Toolkit is awesome at

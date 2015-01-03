@@ -60,6 +60,12 @@ knows the answers for them.
    off (using the F2 key) and switch to Naive completion which suggests words
    from all categories.
 
+   The code itself is not my proudest work. Writing auto-completion libraries
+   are inherently difficult since you're dealing with incomplete input. So the
+   parsers can't work effectively in many scenarios. So the code has to
+   compensate for those corner cases. Which resulted in a lot of testing and
+   patching those cases with one off 'if-conditions'. 
+
 #. **Why is this not version 1.0?**
 
    The backbone of pgcli is `Python-Prompt-Toolkit`_. Prompt Toolkit is awesome at
