@@ -25,19 +25,23 @@ knows the answers for them.
    
    So this app exists because Jonathan was kind enough to request my feedback. 
 
-#. **Will there be an equivalent of this for Sqlite?**
+#. **Does pgcli work on Windows?**
+
+   The honest answer is, I don't know. All the underlying libraries used by
+   pgcli are cross-platform compatible (including Windows). But I have not had
+   the opportunity to try it on Windows. It is mainly because I don't have a
+   windows machine to try this and I'm too lazy to try and provision an Azure
+   instance.
+
+   If there is enough interest, I will get off my lazy bum and buy an Azure
+   instance. Please file bugs if it doesn't work on Windows.
+
+#. **Will there be an equivalent of this for Sqlite/MySql?**
    
    Probably. Now that I've worked out the hard parts (sqlcompletion and special
-   commands), I'd like to write an Sqlite CLI. But I'm not sure if I'll have
-   the time to do it in the near future. But if you're interested in doing it,
-   I'd be happy to help you.
-
-#. **Will there be an equivalent of this for MySql?**
-
-   Probably. Now that I've worked out the hard parts (sqlcompletion and special
-   commands), I'd like to write an MySql CLI. But I'm not sure if I'll have
-   the time to do it in the near future. But if you're interested in doing it,
-   I'd be happy to help you.
+   commands), I'd like to write a CLI for Sqlite and MySql. But I'm not sure if
+   I'll have the time to do it in the immediate future. But if you're
+   interested in doing it, I'd be happy to help you. Please get in touch_.
 
 #. **What's the difference between Smart Completion and Naive Completion?**
 
@@ -87,7 +91,7 @@ knows the answers for them.
 #. **I found a bug, what do I do?** 
 
    Whoopsie Daisies! I'm sorry you encountered a bug. Please file a bug on
-   Github Issues_ for this project.
+   Github Issues_ for this project. I'll fix it asap.
 
 #. **I have a feature request, what do I do?** 
 
@@ -118,3 +122,4 @@ knows the answers for them.
 .. _`Python-Prompt-Toolkit`: https://github.com/jonathanslenders/python-prompt-toolkit 
 .. _Sqlparse: https://pypi.python.org/pypi/sqlparse
 .. _contact: {filename}/pages/6.about.rst
+.. _touch: {filename}/pages/6.about.rst

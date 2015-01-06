@@ -3,7 +3,10 @@ pgcli
 
 :slug: index
 
-Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting.
+Pgcli is a command line interface for Postgres with auto-completion and syntax
+highlighting. 
+
+Source: https://github.com/amjith/pgcli
 
 .. image:: {filename}/images/image01.png
    :alt: Screenshot
@@ -32,4 +35,12 @@ Usage
 
     $ pgcli postgres://amjith:passw0rd@example.com:5432/app_db
 
+
+Request
+=======
+
+If you know how to build a brew formula for Python packages, please get in
+touch_.
+
 .. _install: {filename}/pages/1.install.rst
+.. _touch: {filename}/pages/6.about.rst

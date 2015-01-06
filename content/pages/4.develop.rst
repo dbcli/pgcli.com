@@ -11,6 +11,8 @@ heart felt thanks for contributing.
 GitHub Workflow
 ---------------
 
+The source code is hosted by Github: https://github.com/amjith/pgcli
+
 If you already know how to fork a project and send pull requests to it using
 github, you can safely skip this section.
 
@@ -85,7 +87,7 @@ Tests
 
 The tests are located in the ``tests`` directory in the pgcli project root.
 
-Tests are written using ``py.test`` testing framework. Install ``py.test`` by
+Tests are written using `py.test`_ testing framework. Install ``py.test`` by
 using ``pip install pytest`` in the virtualenv. Then execute the tests by
 calling ``py.test`` from the root of the project folder. 
 
@@ -102,5 +104,4 @@ It is highly recommended to make sure the tests are passing in at least one of
 the supported versions of Python before opening the Pull Request.
 
 .. _pgcli: https://github.com/amjith/pgcli
-
-
+.. _`py.test`: http://pytest.org/latest/

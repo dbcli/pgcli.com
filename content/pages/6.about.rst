@@ -8,9 +8,9 @@ Hi, I'm Amjith_, the author of pgcli_.
 If you have feedback about pgcli, this site or general python questions, feel
 free to contact me. 
 
-* Email_
-* Twitter_
-* Github_
+* Email_ - amjith[dot]r[at]gmail[dot]com
+* Twitter_ - @amjithr
+* Github_ 
 
 I'll try my best to answer you.
       
