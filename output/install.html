@@ -49,6 +49,8 @@ or
 </div>
 <div class="section" id="detailed">
 <h2>Detailed:</h2>
+<div class="section" id="mac-os-x">
+<h3>Mac OS X:</h3>
 <p>The recommended way to install Python packages is to use a package managed
 called called <tt class="docutils literal">pip</tt>. There is also an older package manager known as
 <tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
@@ -57,10 +59,7 @@ called called <tt class="docutils literal">pip</tt>. There is also an older pack
 <span class="nv">$ </span>which pip
 </pre>
 <p>If the above command returns an error, then you do not have pip installed on
-your computer. You can install pip for your OS using one of the following
-methods.</p>
-<div class="section" id="mac-os-x">
-<h3>Mac OS X:</h3>
+your computer.</p>
 <p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
 use easy_install to install <tt class="docutils literal">pip</tt>.</p>
 <pre class="code bash literal-block">
@@ -87,6 +86,15 @@ system. I typically do the following:</p>
 </div>
 <div class="section" id="linux">
 <h3>Linux:</h3>
+<p>The recommended way to install Python packages is to use a package managed
+called called <tt class="docutils literal">pip</tt>. There is also an older package manager known as
+<tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
+<p>Check if <tt class="docutils literal">pip</tt> is installed on the system.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>which pip
+</pre>
+<p>If the above command returns an error, then you do not have pip installed on
+your computer. You can install it using your OS package manager.</p>
 <p>Debian based systems (Debian, Ubuntu, Mint etc)</p>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>sudo apt-get install python-pip
