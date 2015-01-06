@@ -109,17 +109,17 @@ For Redhat based systems (Fedora, Centos, RHEL etc)
     $ sudo yum install python-pip
 
 Pgcli uses ``psycopg`` to talk to postgres database. In order to install
-psycopg, you will need you will need libpq installed on your system. Since
-``psycopg`` is a C extension for Python, a C compiler is needed to install it
-on your system.
+psycopg, you will need you will need libpq and python-dev installed on your
+system. Since ``psycopg`` is a C extension for Python, a C compiler is needed
+to install it on your system.
 
 .. code:: bash
 
-    $ sudo apt-get install libpq-dev    # debian
+    $ sudo apt-get install libpq-dev python-dev   # debian
 
     or 
 
-    $ sudo yum install postgresql-devel   # redhat
+    $ sudo yum install postgresql-devel python-devel  # redhat
 
 Now that the required dependencies are satisfied you are ready to install
 ``pgcli``.

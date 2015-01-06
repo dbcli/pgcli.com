@@ -104,15 +104,15 @@ your computer. You can install it using your OS package manager.</p>
 <span class="nv">$ </span>sudo yum install python-pip
 </pre>
 <p>Pgcli uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
-psycopg, you will need you will need libpq installed on your system. Since
-<tt class="docutils literal">psycopg</tt> is a C extension for Python, a C compiler is needed to install it
-on your system.</p>
+psycopg, you will need you will need libpq and python-dev installed on your
+system. Since <tt class="docutils literal">psycopg</tt> is a C extension for Python, a C compiler is needed
+to install it on your system.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo apt-get install libpq-dev    <span class="c"># debian
+<span class="nv">$ </span>sudo apt-get install libpq-dev python-dev   <span class="c"># debian
 </span>
 or
 
-<span class="nv">$ </span>sudo yum install postgresql-devel   <span class="c"># redhat</span>
+<span class="nv">$ </span>sudo yum install postgresql-devel python-devel  <span class="c"># redhat</span>
 </pre>
 <p>Now that the required dependencies are satisfied you are ready to install
 <tt class="docutils literal">pgcli</tt>.</p>
