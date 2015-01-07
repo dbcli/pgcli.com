@@ -42,11 +42,25 @@ detailed instructions.</p>
 <div class="section" id="usage">
 <h2>Usage</h2>
 <pre class="code bash literal-block">
+<span class="nv">$ </span>pgcli --help                                                                                                                                                                                       <span class="o">[</span>21:54:33<span class="o">]</span>
+Usage: pgcli <span class="o">[</span>OPTIONS<span class="o">]</span> DATABASE
+
+Options:
+  -h, --host TEXT     Host address of the postgres database.
+  -p, --port INTEGER  Port number at which the postgres instance is listening.
+  -U, --user TEXT     User name to connect to the postgres database.
+  -W, --password      Force password prompt.
+  --help              Show this message and exit.
+</pre>
+</div>
+<div class="section" id="examples">
+<h2>Examples</h2>
+<pre class="code bash literal-block">
 <span class="nv">$ </span>pgcli local_database
 
-or
-
 <span class="nv">$ </span>pgcli postgres://amjith:passw0rd&#64;example.com:5432/app_db
+
+<span class="nv">$ </span>pgcli -h localhost -p <span class="m">5432</span> -U amjith app_db
 </pre>
 </div>
 <div class="section" id="request">

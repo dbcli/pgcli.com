@@ -29,11 +29,27 @@ Usage
 
 .. code:: bash
 
+    $ pgcli --help                                                                                                                                                                                       [21:54:33]
+    Usage: pgcli [OPTIONS] DATABASE
+
+    Options:
+      -h, --host TEXT     Host address of the postgres database.
+      -p, --port INTEGER  Port number at which the postgres instance is listening.
+      -U, --user TEXT     User name to connect to the postgres database.
+      -W, --password      Force password prompt.
+      --help              Show this message and exit.
+
+Examples
+========
+
+.. code:: bash
+
     $ pgcli local_database
-    
-    or
 
     $ pgcli postgres://amjith:passw0rd@example.com:5432/app_db
+
+    $ pgcli -h localhost -p 5432 -U amjith app_db
+
 
 
 Request
