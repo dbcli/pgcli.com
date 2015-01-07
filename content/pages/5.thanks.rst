@@ -54,4 +54,4 @@ Contributors:
 .. _`Iryna Cherniavska`: https://github.com/j-bennet
 .. _`Jan Urbański`: https://github.com/wulczer
 .. _`Jonathan Slenders`: https://github.com/jonathanslenders 
-.. _`Jason Clark`:http://jasonrclark.com/ 
+.. _`Jason Clark`: http://jasonrclark.com/ 
