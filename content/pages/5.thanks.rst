@@ -36,8 +36,8 @@ feedback.
 
 * `Iryna Cherniavska`_
 * `Jan Urbański`_
-* `Jonathan Slenders`_ 
 * `Jason Clark`_
+* `Jonathan Slenders`_ 
 
 If you'd like to send feedback, please send me an email_, tweet_ or file a
 github issue_. 
