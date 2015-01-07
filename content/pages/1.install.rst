@@ -25,7 +25,7 @@ If you already know how to install python packages, then you can do:
 
     or 
 
-    $ easy_install install pgcli
+    $ easy_install pgcli
 
 You might need ``sudo``. 
 
@@ -54,7 +54,7 @@ use easy_install to install ``pip``.
 
 .. code:: bash
 
-    $ sudo easy_install install pip
+    $ sudo easy_install pip
     
 ``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
 psycopg, you will need libpq installed on your system. The easiest way to get
