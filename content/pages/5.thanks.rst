@@ -37,6 +37,7 @@ feedback.
 * `Iryna Cherniavska`_
 * `Jan Urbański`_
 * `Jonathan Slenders`_ 
+* `Jason Clark`_
 
 If you'd like to send feedback, please send me an email_, tweet_ or file a
 github issue_. 
@@ -53,3 +54,4 @@ Contributors:
 .. _`Iryna Cherniavska`: https://github.com/j-bennet
 .. _`Jan Urbański`: https://github.com/wulczer
 .. _`Jonathan Slenders`: https://github.com/jonathanslenders 
+.. _`Jason Clark`: https://twitter.com/jasonrclark
