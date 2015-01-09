@@ -85,8 +85,8 @@ knows the answers for them.
 
 #. **How can I get support for pgcli?**
 
-   The best resource at the moment is to use the Github Issues_ page for this
-   project. 
+   There is a `mailing list`_ and an `IRC`_ (#pgcli on Freenode) channel. We
+   also track our bugs and feature requests in Github Issues_ for this project. 
 
 #. **I found a bug, what do I do?** 
 
@@ -123,3 +123,5 @@ knows the answers for them.
 .. _Sqlparse: https://pypi.python.org/pypi/sqlparse
 .. _contact: {filename}/pages/6.about.rst
 .. _touch: {filename}/pages/6.about.rst
+.. _`mailing list`:  https://groups.google.com/forum/#!forum/pgcli
+.. _`IRC`: http://webchat.freenode.net/?randomnick=1&channels=#pgcli&uio=d4

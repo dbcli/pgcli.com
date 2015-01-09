@@ -8,21 +8,34 @@ Hi, I'm Amjith_, the author of pgcli_.
 If you have feedback about pgcli, this site or general python questions, feel
 free to contact me. 
 
+Project
+-------
+
+MailingList - GoogleGroups_
+
+IRC - `#pgcli`_ on Freenode
+
+Github - https://github.com/amjith/pgcli
+
+Personal
+=========
+
 * Email_ - amjith[dot]r[at]gmail[dot]com
 * Twitter_ - @amjithr
-* Github_ 
 
 I'll try my best to answer you.
       
+.. _`#pgcli`: http://webchat.freenode.net/?randomnick=1&channels=#pgcli&uio=d4
 .. _Email: mailto:amjith[dot]r[at]gmail[dot]com
+.. _GoogleGroups: https://groups.google.com/forum/#!forum/pgcli
 .. _Twitter: https://twitter.com/amjithr 
-.. _Github: https://github.com/amjith
+.. _Github: https://github.com/amjith/pgcli
 
 Responsibility
-==============
+--------------
 
-I will:
--------
+I will
+======
 
 * Be nice.
 * Be courteous.
@@ -34,16 +47,16 @@ I will:
 If I ever fail one of the tenets above, please let me know. After all, I am
 human.
 
-Exception:
-----------
+Exception
+=========
 
 There is one exception. 
 
 I don't react well when someone is being aggressive or insulting. I will
 politely let you know that you're being unpleasant and I will stop responding.
 
-Caveats:
---------
+Caveats
+=======
 
 1. English is not my native tongue. 
 
