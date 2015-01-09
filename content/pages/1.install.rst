@@ -36,7 +36,7 @@ Detailed:
 Mac OS X:
 ~~~~~~~~~
 
-The recommended way to install Python packages is to use a package managed
+The recommended way to install Python packages is to use a package manager
 called called ``pip``. There is also an older package manager known as
 ``easy_install`` but it is replaced by pip.
 
@@ -83,7 +83,7 @@ Now that the required dependencies are satisfied you are ready to install
 Linux:
 ~~~~~~
 
-The recommended way to install Python packages is to use a package managed
+The recommended way to install Python packages is to use a package manager
 called called ``pip``. There is also an older package manager known as
 ``easy_install`` but it is replaced by pip.
 
@@ -109,9 +109,9 @@ For Redhat based systems (Fedora, Centos, RHEL etc)
     $ sudo yum install python-pip
 
 Pgcli uses ``psycopg`` to talk to postgres database. In order to install
-psycopg, you will need you will need libpq and python-dev installed on your
-system. Since ``psycopg`` is a C extension for Python, a C compiler is needed
-to install it on your system.
+psycopg, you will need libpq and python-dev installed on your system. Since
+``psycopg`` is a C extension for Python, a C compiler is needed to install it
+on your system.
 
 .. code:: bash
 
