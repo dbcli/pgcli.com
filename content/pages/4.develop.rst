@@ -100,8 +100,11 @@ then ``cd`` into the tests folder and execute ``py.test test_sqlcompletion.py``
 to run just the tests from that file or ``tox test_sqlcompletion.py`` to run
 the tests in that file in all three Python versions.
 
-It is highly recommended to make sure the tests are passing in at least one of
-the supported versions of Python before opening the Pull Request.
+The tests are also run via `Travis CI`_ when a new Pull Request is opened. If
+you have a change and it happens to be failing on one of the Python version
+(typically on Python 3), don't worry about it. Just open a pull request and we
+can help you get it fixed before merging.
 
 .. _pgcli: https://github.com/amjith/pgcli
 .. _`py.test`: http://pytest.org/latest/
+.. _`Travis CI`: https://travis-ci.org/amjith/pgcli

@@ -106,8 +106,10 @@ project root to run the tests in all 3 python versions.</p>
 then <tt class="docutils literal">cd</tt> into the tests folder and execute <tt class="docutils literal">py.test test_sqlcompletion.py</tt>
 to run just the tests from that file or <tt class="docutils literal">tox test_sqlcompletion.py</tt> to run
 the tests in that file in all three Python versions.</p>
-<p>It is highly recommended to make sure the tests are passing in at least one of
-the supported versions of Python before opening the Pull Request.</p>
+<p>The tests are also run via <a class="reference external" href="https://travis-ci.org/amjith/pgcli">Travis CI</a> when a new Pull Request is opened. If
+you have a change and it happens to be failing on one of the Python version
+(typically on Python 3), don't worry about it. Just open a pull request and we
+can help you get it fixed before merging.</p>
 </div>
 
 </section>
