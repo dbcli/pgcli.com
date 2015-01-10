@@ -46,7 +46,7 @@ knows the answers for them.
 #. **What's the difference between Smart Completion and Naive Completion?**
 
    Naive Completion is a collection of all the keywords, functions, table names
-   and column names. As you start typing this collection will be narrorwed down
+   and column names. As you start typing this collection will be narrowed down
    based on the text that has been types so far. 
 
    Smart Completion tries to do context sensitive completion. For eg: 'SELECT *
@@ -55,7 +55,7 @@ knows the answers for them.
 
 #. **How 'smart' is the Smart Completion?**
 
-   Smart Completion uses the Sqlparse_ library to tokenize the sql statment and
+   Smart Completion uses the Sqlparse_ library to tokenize the sql statement and
    uses heuristics to suggest context sensitive completion. It can handle
    nearly 80% of scenarios (in my testing). But there are still some corner
    cases where it will suggest only keywords when you might be looking for
@@ -66,7 +66,7 @@ knows the answers for them.
 
    The code itself is not my proudest work. Writing auto-completion libraries
    are inherently difficult since you're dealing with incomplete input. So the
-   parsers can't work effectively in many scenarios. So the code has to
+   parser can't work effectively in many scenarios. So the code has to
    compensate for those corner cases. Which resulted in a lot of testing and
    patching those cases with one off 'if-conditions'. 
 
@@ -75,7 +75,7 @@ knows the answers for them.
    The backbone of pgcli is `Python-Prompt-Toolkit`_. Prompt Toolkit is awesome at
    what it does, but the APIs for the library are still evolving. So I'm
    hesitant to mark pgcli as 1.0, since pgcli will also be changing to keep up
-   with the changes in Prompt Tookit. I'll probably release v1.0 when
+   with the changes in Prompt Toolkit. I'll probably release v1.0 when
    Python-Prompt-Toolkit goes 1.0.
 
 

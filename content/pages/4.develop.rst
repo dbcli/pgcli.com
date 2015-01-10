@@ -30,7 +30,7 @@ The basic steps are:
 
        git clone git@github.com:<your-username>/pgcli.git
 
-#. Setup a remote called upstread that points to the original pgcli repo. This
+#. Setup a remote called upstream that points to the original pgcli repo. This
    is to keep your fork in sync with the mainline.
 
    .. code:: bash
