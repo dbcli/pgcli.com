@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-06-01T00:00:00-07:00</updated><entry><title>Launching pgcli</title><link href="http://pgcli.com/launch.html" rel="alternate"></link><updated>2015-06-01T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-06-01:launch.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://pgcli.com"&gt;Pgcli&lt;/a&gt; was launched today on &lt;a class="reference external" href="https://news.ycombinator.com/item?id=8844723"&gt;HackerNews&lt;/a&gt; and &lt;a class="reference external" href="http://www.reddit.com/r/Python/comments/2riuj0/pgcli_a_cli_for_postgres_with_autocompletion_and/"&gt;Reddit&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-12-01T00:00:00-08:00</updated><entry><title>One week after launch</title><link href="http://pgcli.com/post-launch.html" rel="alternate"></link><updated>2015-12-01T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-12-01:post-launch.html</id><summary type="html">&lt;p&gt;Pgcli was &lt;a class="reference external" href="http://pgcli.com/launch.html"&gt;launched&lt;/a&gt; approximately one week ago.&lt;/p&gt;
+&lt;p&gt;It was an extremely successful launch beyond any of my wildest imaginations.&lt;/p&gt;
+&lt;div class="section" id="obligatory-vanity-metrics"&gt;
+&lt;h2&gt;Obligatory Vanity Metrics:&lt;/h2&gt;
+&lt;p&gt;Google Analytics: 21K views and 12.2K users.
+&lt;a class="reference external" href="https://twitter.com/amjithr/status/552491986255896576"&gt;Twitter&lt;/a&gt;: 70 retweets, 68 favs.
+&lt;a class="reference external" href="https://github.com/amjith/pgcli"&gt;Github&lt;/a&gt;: 1,188 stars, 43 forks, 29 watchers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hindsight"&gt;
+&lt;h2&gt;Hindsight:&lt;/h2&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Launching pgcli</title><link href="http://pgcli.com/launch.html" rel="alternate"></link><updated>2015-01-06T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-06:launch.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://pgcli.com"&gt;Pgcli&lt;/a&gt; was launched today on &lt;a class="reference external" href="https://news.ycombinator.com/item?id=8844723"&gt;HackerNews&lt;/a&gt; and &lt;a class="reference external" href="http://www.reddit.com/r/Python/comments/2riuj0/pgcli_a_cli_for_postgres_with_autocompletion_and/"&gt;Reddit&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pgcli.com"&gt;Pgcli&lt;/a&gt; is a command line interface for Postgres database that can do
 auto-completion and syntax-highlighting among other things. A list of &lt;a class="reference external" href="http://pgcli.com/features"&gt;features&lt;/a&gt;
 with screenshots are available on the &lt;a class="reference external" href="http://pgcli.com/features"&gt;features&lt;/a&gt; page.&lt;/p&gt;

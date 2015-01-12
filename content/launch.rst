@@ -1,7 +1,7 @@
 Launching pgcli
 ###############
 
-:date: 2015-6-1
+:date: 2015-1-6
 :category: Blog
 :slug: launch
 
