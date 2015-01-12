@@ -23,6 +23,13 @@ If you already know how to install python packages, then you can simply do:
 
     $ pip install pgcli
 
+If you're on OS X you can install it via homebrew. Just be aware that this will
+install postgresql via homebrew if you don't already have it.
+
+.. code:: bash
+
+   $ brew install pgcli
+
 If you're having trouble with the quick start, check the install_ page for
 detailed instructions.
 

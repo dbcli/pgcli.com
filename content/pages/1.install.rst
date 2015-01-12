@@ -32,12 +32,22 @@ You might need ``sudo``.
 Detailed:
 =========
 
-
 Mac OS X:
 ~~~~~~~~~
 
-The recommended way to install Python packages is to use a package manager
-called called ``pip``. There is also an older package manager known as
+The easiest way install ``pgcli`` in an OS X machine is to use homebrew_.
+Please be aware that this will install postgresql via homebrew. Because there
+is no way to detect if you have postgresql installed via MacPorts or
+PostgresApp or other means.
+
+.. code:: bash
+
+    $ brew install pgcli
+
+That's it. You can now launch it by typing ``pgcli`` on the command line.
+
+Alternatively, since ``pgcli`` is a python package you can install it via the
+python package manager ``pip``. There is also an older package manager known as
 ``easy_install`` but it is replaced by pip.
 
 Check if ``pip`` is installed on the system.
@@ -130,3 +140,5 @@ Now that the required dependencies are satisfied you are ready to install
 
 If you're having trouble getting this installed please feel free to `contact
 <{filename}/pages/6.about.rst>`_ me. 
+
+.. _homebrew: http://brew.sh/
