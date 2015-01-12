@@ -36,9 +36,7 @@ Mac OS X:
 ~~~~~~~~~
 
 The easiest way install ``pgcli`` in an OS X machine is to use homebrew_.
-Please be aware that this will install postgresql via homebrew. Because there
-is no way to detect if you have postgresql installed via MacPorts or
-PostgresApp or other means.
+Please be aware that this will install postgresql via homebrew. 
 
 .. code:: bash
 
