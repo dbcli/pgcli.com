@@ -51,8 +51,16 @@ or
 <h2>Detailed:</h2>
 <div class="section" id="mac-os-x">
 <h3>Mac OS X:</h3>
-<p>The recommended way to install Python packages is to use a package manager
-called called <tt class="docutils literal">pip</tt>. There is also an older package manager known as
+<p>The easiest way install <tt class="docutils literal">pgcli</tt> in an OS X machine is to use <a class="reference external" href="http://brew.sh/">homebrew</a>.
+Please be aware that this will install postgresql via homebrew. Because there
+is no way to detect if you have postgresql installed via MacPorts or
+PostgresApp or other means.</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>brew install pgcli
+</pre>
+<p>That's it. You can now launch it by typing <tt class="docutils literal">pgcli</tt> on the command line.</p>
+<p>Alternatively, since <tt class="docutils literal">pgcli</tt> is a python package you can install it via the
+python package manager <tt class="docutils literal">pip</tt>. There is also an older package manager known as
 <tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
 <p>Check if <tt class="docutils literal">pip</tt> is installed on the system.</p>
 <pre class="code bash literal-block">
