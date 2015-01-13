@@ -2,6 +2,7 @@ Launching pgcli
 ###############
 
 :date: 2015-1-6
+:tags: python
 :category: Blog
 :slug: launch
 
