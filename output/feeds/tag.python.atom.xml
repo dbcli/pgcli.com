@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.python.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-13T00:00:00-08:00</updated><entry><title>Release v0.12.0</title><link href="http://pgcli.com/v0.12.0.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:v0.12.0.html</id><summary type="html">&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using &lt;tt class="docutils literal"&gt;pip install &lt;span class="pre"&gt;-U&lt;/span&gt;
-pgcli&lt;/tt&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.python.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-13T00:00:00-08:00</updated><entry><title>Release v0.12.0</title><link href="http://pgcli.com/v0.12.0.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:v0.12.0.html</id><summary type="html">&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;0.12.0&lt;/h2&gt;
 &lt;div class="section" id="features"&gt;

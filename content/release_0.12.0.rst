@@ -6,8 +6,11 @@ Release v0.12.0
 :category: Blog
 :slug: v0.12.0
 
-A feature packed release_. You can install/upgrade using ``pip install -U
-pgcli``.
+A feature packed release_. You can install/upgrade using 
+
+.. code:: bash
+   
+   $ pip install -U pgcli
 
 0.12.0
 ======
