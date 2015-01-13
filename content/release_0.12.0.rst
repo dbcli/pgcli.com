@@ -2,7 +2,7 @@ Release v0.12.0
 ###############
 
 :date: 2015-1-13
-:tags: python, release, changelog
+:tags: python, release, changelog, postgres
 :category: Blog
 :slug: v0.12.0
 

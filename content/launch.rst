@@ -2,7 +2,7 @@ Launching pgcli
 ###############
 
 :date: 2015-1-6
-:tags: python
+:tags: python, postgres
 :category: Blog
 :slug: launch
 
