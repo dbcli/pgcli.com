@@ -28,7 +28,60 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../launch.html">Launching pgcli</a></h1>
+                    <h1 class="entry-title"><a href="../v0.12.0.html">Release v0.12.0</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-01-13T00:00:00-08:00">
+                Published: Tue 13 January 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> </p>
+</footer><!-- /.post-info --><p>A feature packed release.</p>
+<div class="section" id="id1">
+<h2>0.12.0</h2>
+<div class="section" id="features">
+<h3>Features:</h3>
+<ul class="simple">
+<li>Upgrade to prompt_toolkit version 0.26 (Thanks:<a class="reference external" href="https://github.com/macobo">Karl-Aksel Puulmann</a>)<ul>
+<li>Adds Ctrl-left/right to move the cursor one word left/right respectively.</li>
+<li>Internal API changes.</li>
+</ul>
+</li>
+<li>IPython integration through <a class="reference external" href="https://github.com/catherinedevlin/ipython-sql">ipython-sql</a> (Thanks:<a class="reference external" href="https://github.com/darikg">darikg</a>)<ul>
+<li>Add an ipython magic extension to embed pgcli inside ipython. (more details to follow)</li>
+<li>Results from a pgcli query are sent back to ipython.</li>
+</ul>
+</li>
+<li>Multiple sql statments in the same line separated by semi-colon. (Thanks:<a class="reference external" href="https://github.com/macobo">Karl-Aksel Puulmann</a>)</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h3>Bug Fixes:</h3>
+<ul class="simple">
+<li>Fix 'message' attribute not found exception in Python 3. (Thanks:<a class="reference external" href="https://github.com/GMLudo">Ludovic Gasc</a> )</li>
+<li>Use the database username as the database name instead of defaulting to OS username. (Thanks:<a class="reference external" href="https://github.com/fpietka">François Pietka</a>)</li>
+<li>Auto-completion for auto-escaped column/table names.</li>
+<li>Fix i-reverse-search to work in prompt_toolkit version 0.26.</li>
+</ul>
+</div>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../launch.html" rel="bookmark"
+                           title="Permalink to Launching pgcli">Launching pgcli</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-01-06T00:00:00-08:00">
                 Published: Tue 06 January 2015
@@ -39,16 +92,20 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> </p>
-</footer><!-- /.post-info --><p><a class="reference external" href="http://pgcli.com">Pgcli</a> was launched today on <a class="reference external" href="https://news.ycombinator.com/item?id=8844723">HackerNews</a> and <a class="reference external" href="http://www.reddit.com/r/Python/comments/2riuj0/pgcli_a_cli_for_postgres_with_autocompletion_and/">Reddit</a>.</p>
+</footer><!-- /.post-info -->                <p><a class="reference external" href="http://pgcli.com">Pgcli</a> was launched today on <a class="reference external" href="https://news.ycombinator.com/item?id=8844723">HackerNews</a> and <a class="reference external" href="http://www.reddit.com/r/Python/comments/2riuj0/pgcli_a_cli_for_postgres_with_autocompletion_and/">Reddit</a>.</p>
 <p><a class="reference external" href="http://pgcli.com">Pgcli</a> is a command line interface for Postgres database that can do
 auto-completion and syntax-highlighting among other things. A list of <a class="reference external" href="http://pgcli.com/features">features</a>
 with screenshots are available on the <a class="reference external" href="http://pgcli.com/features">features</a> page.</p>
 <p>Source is available on github: <a class="reference external" href="http://github.com/amjith/pgcli">http://github.com/amjith/pgcli</a></p>
-                </article>
+
+                <a class="readmore" href="../launch.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
