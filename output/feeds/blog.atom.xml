@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-13T00:00:00-08:00</updated><entry><title>Release v0.12.0</title><link href="http://pgcli.com/v0.12.0.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:v0.12.0.html</id><summary type="html">&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-13T00:00:00-08:00</updated><entry><title>One week after launch</title><link href="http://pgcli.com/post-launch.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:post-launch.html</id><summary type="html">&lt;p&gt;Pgcli was &lt;a class="reference external" href="http://pgcli.com/launch.html"&gt;launched&lt;/a&gt; approximately one week ago.&lt;/p&gt;
+&lt;p&gt;It was an extremely successful launch, beyond any of my wildest imaginations.&lt;/p&gt;
+&lt;div class="section" id="obligatory-vanity-metrics"&gt;
+&lt;h2&gt;Obligatory Vanity Metrics:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Google Analytics: 21K views and 12.2K users.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://twitter.com/amjithr/status/552491986255896576"&gt;Twitter&lt;/a&gt;: 70 retweets, 68 favs.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/amjith/pgcli"&gt;Github&lt;/a&gt;: 1,230 stars, 45 forks, 28 watchers.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://news.ycombinator.com/item?id=8844723"&gt;HackerNews&lt;/a&gt;: 227 points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enough with the vanity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="highlights"&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Here are some metrics that I'm personally proud to present. Since launch.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Pull Requests Opened: 40&lt;/li&gt;
+&lt;li&gt;Pull Requests Merged: 38&lt;/li&gt;
+&lt;li&gt;Issues Opened: 62&lt;/li&gt;
+&lt;li&gt;Issues Closed: 34&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let's break it down a little bit more.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Number of Releases: 5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Number of Features Added: 11&lt;/li&gt;
+&lt;li&gt;Features added by community: 0&lt;/li&gt;
+&lt;li&gt;Bugs fixed by community: 10&lt;/li&gt;
+&lt;li&gt;Features added by author: 1&lt;/li&gt;
+&lt;li&gt;Bugs fixed by author: 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have not included the numerous typo fixes contributed by the community. (yes,
+I'm a little bit ashamed by how many mistakes I make when I type).&lt;/p&gt;
+&lt;p&gt;I'm flattered by how many people pitched in to help fix bugs and add features.
+At one point I found a bug and filed an issue to keep track of it and 5 minutes
+later I got a pull request to fix it. I was completely floored by the
+enthusiasm shown by the contributors.&lt;/p&gt;
+&lt;p&gt;I had an internal goal of responding to Pull Requests, Issues and emails within
+24 hours. Even if I couldn't fix the issue or implement a requested feature, I
+wanted to acknowledge it and give feedback about whether I'll do it or not. I
+was able to keep that goal, as you'll see every &lt;a class="reference external" href="https://github.com/amjith/pgcli/issues"&gt;issue&lt;/a&gt; in Github right now has
+a comment from me (except for the ones I filed myself).&lt;/p&gt;
+&lt;p&gt;I was also able to keep up the &lt;a class="reference external" href="http://pgcli.com/about"&gt;responsibility&lt;/a&gt; I outlined the about page.&lt;/p&gt;
+&lt;p&gt;Phew! What a week. I feel invigorated and refueled. Looking forward to working
+through the issues and feature requests.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="python"></category></entry><entry><title>Release v0.12.0</title><link href="http://pgcli.com/v0.12.0.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:v0.12.0.html</id><summary type="html">&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
 &lt;/pre&gt;
