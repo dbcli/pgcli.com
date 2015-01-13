@@ -34,7 +34,7 @@ Let's break it down a little bit more.
 
 * **Number of Releases: 5**
 * Number of Features Added: 11
-* Features added by community: 0
+* Features added by community: 11
 * Bugs fixed by community: 10
 * Features added by author: 1
 * Bugs fixed by author: 3
