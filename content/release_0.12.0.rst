@@ -6,7 +6,8 @@ Release v0.12.0
 :category: Blog
 :slug: v0.12.0
 
-A feature packed release.
+A feature packed release_. You can install/upgrade using ``pip install -U
+pgcli``.
 
 0.12.0
 ======
@@ -40,3 +41,4 @@ Bug Fixes:
 .. _`darikg`: https://github.com/darikg
 .. _`Ludovic Gasc`: https://github.com/GMLudo
 .. _`François Pietka`: https://github.com/fpietka
+.. _release: https://pypi.python.org/pypi/pgcli/0.12.0
