@@ -18,7 +18,7 @@ eg: pgcli dbname user&lt;/li&gt;
 &lt;h2&gt;Bug Fixes:&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Fix the crash when \c fails.&lt;/li&gt;
-&lt;li&gt;Fix the error thrown by d when triggers are present.&lt;/li&gt;
+&lt;li&gt;Fix the error thrown by \d when triggers are present.&lt;/li&gt;
 &lt;li&gt;Fix broken behavior on \?. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
