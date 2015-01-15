@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.changelog.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 13 Jan 2015 00:00:00 -0800</lastBuildDate><item><title>Release v0.12.0</title><link>http://pgcli.com/v0.12.0.html</link><description>&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.changelog.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 14 Jan 2015 00:00:00 -0800</lastBuildDate><item><title>Release v0.13.0</title><link>http://pgcli.com/v0.13.0.html</link><description>&lt;p&gt;A small release that gets &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; closer to being a drop in replacement for
+&lt;tt class="docutils literal"&gt;psql&lt;/tt&gt;.&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Add -d/--dbname option to the commandline.
+eg: pgcli -d database&lt;/li&gt;
+&lt;li&gt;Add the username as an argument after the database.
+eg: pgcli dbname user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix the crash when c fails.&lt;/li&gt;
+&lt;li&gt;Fix the error thrown by d when triggers are present.&lt;/li&gt;
+&lt;li&gt;Fix broken behavior on ?. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Wed, 14 Jan 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-01-14:v0.13.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.12.0</title><link>http://pgcli.com/v0.12.0.html</link><description>&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
 &lt;/pre&gt;
