@@ -25,9 +25,9 @@ Features:
 
 Bug Fixes:
 ----------
-* Fix the crash when \c fails.
+* Fix the crash when \\c fails.
 * Fix the error thrown by \d when triggers are present.
-* Fix broken behavior on \?. (Thanks: darikg_)
+* Fix broken behavior on \\?. (Thanks: darikg_)
 
 .. _`darikg`: https://github.com/darikg
 .. _`detailed instructions`: {filename}/pages/1.install.rst 
