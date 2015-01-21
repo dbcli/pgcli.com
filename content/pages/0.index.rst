@@ -62,7 +62,7 @@ Examples
 Request
 =======
 
-If you know how to build a brew formula or debian package for Python packages,
+If you know how to  debian package or RPM pacakge for Python applications
 please get in touch_.
 
 .. _install: {filename}/pages/1.install.rst
