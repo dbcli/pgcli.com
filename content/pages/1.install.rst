@@ -44,6 +44,14 @@ Please be aware that this will install postgresql via homebrew.
 
 That's it. You can now launch it by typing ``pgcli`` on the command line.
 
+If you have Postgresql installed via different means instead of brew, you can try: 
+
+.. code:: bash
+
+    $ brew install --build-from-source pgcli
+
+This will skip installing Postgresql, if it is already available in the $PATH.
+
 Alternatively, since ``pgcli`` is a python package you can install it via the
 python package manager ``pip``. There is also an older package manager known as
 ``easy_install`` but it is replaced by pip.
