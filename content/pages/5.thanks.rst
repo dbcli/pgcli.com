@@ -49,9 +49,37 @@ github issue_.
 Contributors:
 -------------
 
+* `Darik Gamble`_
 * `Iryna Cherniavska`_
+* `Karl-Aksel Puulmann`_
+* `Daniel Schwarz`_
+* `Stuart Quin`_
+* `Alexander Kukushkin`_
+* `Nick Hahner`_
+* `Marc Abramowitz`_
+* `Ludovic Gasc (GMLudo)`_
+* `Vignesh Anand`_
+* `dwalmsley`_
+* `rrampage`_
+* `while0pass`_
+* `Charlie Arnold`_
+* `Daniel Rocco`_
+* `Dionysis Grigoropoulos`_
+* `Eric Workman`_
+* `François Pietka`_
+* `Guewen Baconnier`_
+* `Hans Roman`_
+* `Jacob Magnusson`_
+* `Sven-Hendrik Haase`_
+* `Tiago Ribeiro`_
 
 .. _`Iryna Cherniavska`: https://github.com/j-bennet
 .. _`Jan Urbański`: https://github.com/wulczer
 .. _`Jonathan Slenders`: https://github.com/jonathanslenders 
 .. _`Jason Clark`: http://jasonrclark.com/ 
+.. _`Darik Gamble`: https://github.com/darikg
+.. _`Iryna Cherniavska`: https://github.com/j-bennet
+.. _`Daniel Rocco`: https://github.com/drocco007 
+.. _`Karl-Aksel Puulmann`: https://github.com/macobo
+.. _`Stuart Quin`: https://github.com/stuartquin
+.. _`Daniel Schwarz`: https://github.com/qwesda
