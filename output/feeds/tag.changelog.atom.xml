@@ -11,7 +11,6 @@ auto-completion and syntax highlighting. You can upgrade using:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Add alias completion support to ON keyword. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Add LIMIT keyword to completion.&lt;/li&gt;
-&lt;li&gt;Confirm before printing large tables.&lt;/li&gt;
 &lt;li&gt;Auto-completion for Postgres schemas. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Better unicode handling for datatypes, dbname and roles.&lt;/li&gt;
 &lt;li&gt;Add timing command to time the sql commands.
