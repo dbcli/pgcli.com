@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.postgres.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-14T00:00:00-08:00</updated><entry><title>Release v0.13.0</title><link href="http://pgcli.com/v0.13.0.html" rel="alternate"></link><updated>2015-01-14T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-14:v0.13.0.html</id><summary type="html">&lt;p&gt;A small release that gets &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; closer to being a drop in replacement for
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.postgres.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-01-31T00:00:00-08:00</updated><entry><title>Release v0.14.0</title><link href="http://pgcli.com/v0.14.0.html" rel="alternate"></link><updated>2015-01-31T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-31:v0.14.0.html</id><summary type="html">&lt;p&gt;A huge release that adds completion support for schemas.&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can upgrade using:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Add alias completion support to ON keyword. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add LIMIT keyword to completion.&lt;/li&gt;
+&lt;li&gt;Confirm before printing large tables.&lt;/li&gt;
+&lt;li&gt;Auto-completion for Postgres schemas. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Better unicode handling for datatypes, dbname and roles.&lt;/li&gt;
+&lt;li&gt;Add timing command to time the sql commands.
+This can be set via config file (~/.pgclirc) using &lt;tt class="docutils literal"&gt;timing = True&lt;/tt&gt;.&lt;/li&gt;
+&lt;li&gt;Add different table styles for displaying output.
+This can be changed via config file (~/.pgclirc) using &lt;tt class="docutils literal"&gt;table_format = fancy_grid&lt;/tt&gt;.&lt;/li&gt;
+&lt;li&gt;Add confirmation before printing results that have more than 1000 rows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Performance improvements to expanded view display (x).&lt;/li&gt;
+&lt;li&gt;Cast bytea files to text while displaying. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added a list of reserved words that should be auto-escaped.&lt;/li&gt;
+&lt;li&gt;Auto-completion is now case-insensitive.&lt;/li&gt;
+&lt;li&gt;Fix the broken completion for multiple sql statements. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.13.0</title><link href="http://pgcli.com/v0.13.0.html" rel="alternate"></link><updated>2015-01-14T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-14:v0.13.0.html</id><summary type="html">&lt;p&gt;A small release that gets &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; closer to being a drop in replacement for
 &lt;tt class="docutils literal"&gt;psql&lt;/tt&gt;.&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
