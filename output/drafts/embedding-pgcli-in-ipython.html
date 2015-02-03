@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Embedding pgcli in IPython</title>
+        <link rel="stylesheet" href="../theme/css/main.css" />
+        <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
+        <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">pgcli </a></h1>
+                <nav><ul>
+                    <li><a href="../index">pgcli</a></li>
+                    <li><a href="../install">Install</a></li>
+                    <li><a href="../features">Features</a></li>
+                    <li><a href="../faq">FAQ</a></li>
+                    <li><a href="../develop">Develop</a></li>
+                    <li><a href="../thanks">Thanks</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li class="active"><a href="../category/blog.html">Blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="../drafts/embedding-pgcli-in-ipython.html" rel="bookmark"
+           title="Permalink to Embedding pgcli in IPython">Embedding pgcli in IPython</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-02-03T00:00:00-08:00">
+                Published: Tue 03 February 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/ipython.html">ipython</a> <a href="../tag/python.html">python</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->      <p><a href="http://ipython.org/">IPython</a> is an interactive shell for Python that is
+well-suited to do data-analysis. It has integration for plotting, data-analysis
+libraries, parallel computing etc. </p>
+<p><a href="https://github.com/catherinedevlin/ipython-sql">IPython-sql</a> is a python
+package that provides an easy way to load data from a database into the ipython
+environment to do the data-analysis. Here's an example. </p>
+<div class="highlight"><pre>In [1]: %load_ext sql
+
+In [2]: %sql postgres://localhost:5432/misago_testforum
+Out[2]: u&#39;Connected: None@misago_testforum&#39;
+
+In [3]: %sql select * FROM django_migrations where id = 5
+1 rows affected.
+Out[3]: [(5, u&#39;admin&#39;, u&#39;0001_initial&#39;, datetime.datetime(2014, 11, 24, 14, 26, 43, 625938, 
+          tzinfo=psycopg2.tz.FixedOffsetTimezone(offset=-480, name=None)))]
+</pre></div>
+
+
+<p>We can now manipulate the data that was imported from the database. </p>
+<p>The trouble is ipython doesn't have the ability to do auto-completion for the
+sql statements. So it's a bit hard to iterate on the sql statement to get the
+right data.</p>
+<p>Thanks to <a href="https://github.com/darikg">Darik Gamble</a> we can now embed pgcli
+directly inside the ipython console. We can iterate over the sql statements in
+pgcli with the comfort of auto-completion and preview the results before
+loading it into IPython. When we're satisfied with the results all we do is
+quit pgcli, and we'll drop back to IPython loaded with the results from the
+last query.</p>
+<p>Let's see how that works. </p>
+<div class="highlight"><pre># IPython Console
+
+In [1]: %load_ext pgcli.main
+The pgcli.main module is not an IPython extension.
+
+In [2]: %load_ext pgcli.magic
+
+In [3]: %pgcli postgres://localhost:5432/misago_testforum
+Connected: None@misago_testforum
+
+# pgcli repl
+
+misago_testforum&gt; SELECT * FROM django_migrations WHERE id = 5
++------+-------+--------------+----------------------------------+
+|   id | app   | name         | applied                          |
+|------+-------+--------------+----------------------------------|
+|    5 | admin | 0001_initial | 2014-11-24 14:26:43.625938-08:00 |
++------+-------+--------------+----------------------------------+
+SELECT 1
+misago_testforum&gt;
+GoodBye!
+1 rows affected.
+
+# Back on IPython Console. 
+
+Out[3]: [(5, u&#39;admin&#39;, u&#39;0001_initial&#39;, datetime.datetime(2014, 11, 24, 14, 26, 43, 625938, 
+          tzinfo=psycopg2.tz.FixedOffsetTimezone(offset=-480, name=None)))]
+
+In [4]: _
+Out[4]: [(5, u&#39;admin&#39;, u&#39;0001_initial&#39;, datetime.datetime(2014, 11, 24, 14, 26, 43, 625938, 
+          tzinfo=psycopg2.tz.FixedOffsetTimezone(offset=-480, name=None)))]
+</pre></div>
+
+
+<p>That's it. So if you're using IPython for data-analysis and have your data
+residing in a Database, you can easily import it in using ipython-sql and
+pgcli.</p>
+<h3>Installation</h3>
+<p>Install pgcli and ipython-sql and you're all set to go. </p>
+<div class="highlight"><pre><span class="nv">$ </span>pip install pgcli ipython ipython-sql
+</pre></div>
+
+
+<p>If you have feedback, please reach out via
+<a href="https://twitter.com/amjithr">twitter</a> or
+<a href="https://github.com/amjith/pgcli/issues">github</a>. Thank you!</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                            <li><a href="http://twitter.com/amjithr">twitter</a></li>
+                            <li><a href="http://github.com/amjith/pgcli">github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58061452-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>
