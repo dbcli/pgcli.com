@@ -29,7 +29,104 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.14.0.html">Release v0.14.0</a></h1>
+                    <h1 class="entry-title"><a href="../embedding-pgcli-in-ipython.html">Embedding pgcli in IPython</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-02-03T00:00:00-08:00">
+                Published: Tue 03 February 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/ipython.html">ipython</a> <a href="../tag/python.html">python</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info --><p><a href="http://ipython.org/">IPython</a> is an interactive shell for Python that is
+well-suited to do data-analysis. It has integration for plotting, data-analysis
+libraries, parallel computing etc. </p>
+<p><a href="https://github.com/catherinedevlin/ipython-sql">IPython-sql</a> is an IPython
+extension that provides an easy way to load data from a database into the
+ipython environment to do the data-analysis. Here's an example. </p>
+<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="o">%</span><span class="n">load_ext</span> <span class="n">sql</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="o">%</span><span class="n">sql</span> <span class="n">postgres</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5432</span><span class="o">/</span><span class="n">misago_testforum</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s">u&#39;Connected: None@misago_testforum&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">%</span><span class="n">sql</span> <span class="n">select</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">django_migrations</span> <span class="n">where</span> <span class="nb">id</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="mi">1</span> <span class="n">rows</span> <span class="n">affected</span><span class="o">.</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+          <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
+</pre></div>
+
+
+<p>We can now manipulate the data that was imported from the database. </p>
+<p>The trouble is ipython doesn't have the ability to do auto-completion for the
+sql statements. So it's a bit hard to iterate on the sql statement to get the
+right data.</p>
+<p><a href="http://pgcli.com">Pgcli</a> on the other hand is a postgres client that provides
+auto-completion for SQL statements.</p>
+<p>Thanks to <a href="https://github.com/darikg">Darik Gamble</a> we can now embed pgcli
+directly inside the ipython console. We can iterate over the sql statements in
+pgcli with the comfort of auto-completion and preview the results before
+loading it into IPython. When we're satisfied with the results, all we do is
+quit pgcli, and we'll drop back to IPython loaded with the results from the
+last query.</p>
+<p>Let's see how that works. </p>
+<div class="highlight"><pre><span class="c"># IPython Console</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="o">%</span><span class="n">load_ext</span> <span class="n">pgcli</span><span class="o">.</span><span class="n">magic</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">%</span><span class="n">pgcli</span> <span class="n">postgres</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5432</span><span class="o">/</span><span class="n">misago_testforum</span>
+<span class="n">Connected</span><span class="p">:</span> <span class="bp">None</span><span class="nd">@misago_testforum</span>
+
+<span class="c"># pgcli repl</span>
+
+<span class="n">misago_testforum</span><span class="o">&gt;</span> <span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">django_migrations</span> <span class="n">WHERE</span> <span class="nb">id</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="o">+------+-------+--------------+----------------------------------+</span>
+<span class="o">|</span>   <span class="nb">id</span> <span class="o">|</span> <span class="n">app</span>   <span class="o">|</span> <span class="n">name</span>         <span class="o">|</span> <span class="n">applied</span>                          <span class="o">|</span>
+<span class="o">|------+-------+--------------+----------------------------------|</span>
+<span class="o">|</span>    <span class="mi">5</span> <span class="o">|</span> <span class="n">admin</span> <span class="o">|</span> <span class="mo">0001</span><span class="n">_initial</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">24</span> <span class="mi">14</span><span class="p">:</span><span class="mi">26</span><span class="p">:</span><span class="mf">43.625938</span><span class="o">-</span><span class="mi">08</span><span class="p">:</span><span class="mo">00</span> <span class="o">|</span>
+<span class="o">+------+-------+--------------+----------------------------------+</span>
+<span class="n">SELECT</span> <span class="mi">1</span>
+<span class="n">misago_testforum</span><span class="o">&gt;</span> <span class="nb">exit</span>
+<span class="n">GoodBye</span><span class="err">!</span>
+<span class="mi">1</span> <span class="n">rows</span> <span class="n">affected</span><span class="o">.</span>
+
+<span class="c"># Back on IPython Console. </span>
+
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+          <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">_</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+          <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
+</pre></div>
+
+
+<p>That's it. So if you're using IPython for data-analysis and have your data
+residing in a Database, you can easily import it in using ipython-sql and
+pgcli.</p>
+<h3>Installation</h3>
+<p>Install pgcli and ipython-sql and you're all set to go. </p>
+<div class="highlight"><pre><span class="nv">$ </span>pip install pgcli ipython ipython-sql
+</pre></div>
+
+
+<p>If you have feedback, please reach out via
+<a href="https://twitter.com/amjithr">twitter</a> or
+<a href="https://github.com/amjith/pgcli/issues">github</a>. Thank you!</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.14.0.html" rel="bookmark"
+                           title="Permalink to Release v0.14.0">Release v0.14.0</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-01-31T00:00:00-08:00">
                 Published: Sat 31 January 2015
@@ -40,7 +137,7 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info --><p>A huge release that adds completion support for schemas.</p>
+</footer><!-- /.post-info -->                <p>A huge release that adds completion support for schemas.</p>
 <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can upgrade using:</p>
 <pre class="code bash literal-block">
@@ -50,33 +147,10 @@ auto-completion and syntax highlighting. You can upgrade using:</p>
 <div class="section" id="features">
 <h2>Features:</h2>
 <ul class="simple">
-<li>Add alias completion support to ON keyword. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
-<li>Add LIMIT keyword to completion.</li>
-<li>Auto-completion for Postgres schemas. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-<li>Better unicode handling for datatypes, dbname and roles.</li>
-<li>Add timing command to time the sql commands.
-This can be set via config file (~/.pgclirc) using <tt class="docutils literal">timing = True</tt>.</li>
-<li>Add different table styles for displaying output.
-This can be changed via config file (~/.pgclirc) using <tt class="docutils literal">table_format = fancy_grid</tt>.</li>
-<li>Add confirmation before printing results that have more than 1000 rows.</li>
-</ul>
-</div>
-<div class="section" id="bug-fixes">
-<h2>Bug Fixes:</h2>
-<ul class="simple">
-<li>Performance improvements to expanded view display (x).</li>
-<li>Cast bytea files to text while displaying. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
-<li>Added a list of reserved words that should be auto-escaped.</li>
-<li>Auto-completion is now case-insensitive.</li>
-<li>Fix the broken completion for multiple sql statements. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-</ul>
-</div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<li>Add alias completion support to ON keyword. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna ...</a></li></ul></div>
+                <a class="readmore" href="../v0.14.0.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -141,43 +215,6 @@ eg: pgcli ...</li></ul></div>
 </ul>
 <p>Enough with the vanity ...</p></div>
                 <a class="readmore" href="../post-launch.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.12.0.html" rel="bookmark"
-                           title="Permalink to Release v0.12.0">Release v0.12.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-08:00">
-                Published: Tue 13 January 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A feature packed <a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0">release</a>. You can install/upgrade using</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<div class="section" id="id1">
-<h2>0.12.0</h2>
-<div class="section" id="features">
-<h3>Features:</h3>
-<ul class="simple">
-<li>Upgrade to prompt_toolkit version 0.26 (Thanks:<a class="reference external" href="https://github.com/macobo">Karl-Aksel Puulmann</a>)<ul>
-<li>Adds Ctrl-left/right to move the cursor one word left/right respectively.</li>
-<li>Internal API changes.</li>
-</ul>
-</li>
-<li>IPython integration through <a class="reference external" href="https://github.com/catherinedevlin/ipython-sql">ipython-sql</a> (Thanks:<a class="reference external" href="https://github.com/darikg">darikg</a>)<ul>
-<li>Add an ipython ...</li></ul></li></ul></div></div>
-                <a class="readmore" href="../v0.12.0.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

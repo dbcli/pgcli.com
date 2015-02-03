@@ -2,18 +2,19 @@ Title: Embedding pgcli in IPython
 Date: 2015-2-3
 Category: Blog
 Tags: ipython, python, postgres
-Status: draft
 
 
 [IPython](http://ipython.org/) is an interactive shell for Python that is
 well-suited to do data-analysis. It has integration for plotting, data-analysis
 libraries, parallel computing etc. 
 
-[IPython-sql](https://github.com/catherinedevlin/ipython-sql) is a python
-package that provides an easy way to load data from a database into the ipython
-environment to do the data-analysis. Here's an example. 
+[IPython-sql](https://github.com/catherinedevlin/ipython-sql) is an IPython
+extension that provides an easy way to load data from a database into the
+ipython environment to do the data-analysis. Here's an example. 
 
 ```
+:::python
+
 In [1]: %load_ext sql
 
 In [2]: %sql postgres://localhost:5432/misago_testforum
@@ -31,20 +32,22 @@ The trouble is ipython doesn't have the ability to do auto-completion for the
 sql statements. So it's a bit hard to iterate on the sql statement to get the
 right data.
 
+[Pgcli](http://pgcli.com) on the other hand is a postgres client that provides
+auto-completion for SQL statements.
+
 Thanks to [Darik Gamble](https://github.com/darikg) we can now embed pgcli
 directly inside the ipython console. We can iterate over the sql statements in
 pgcli with the comfort of auto-completion and preview the results before
-loading it into IPython. When we're satisfied with the results all we do is
+loading it into IPython. When we're satisfied with the results, all we do is
 quit pgcli, and we'll drop back to IPython loaded with the results from the
 last query.
 
 Let's see how that works. 
 
 ```
-# IPython Console
+:::python
 
-In [1]: %load_ext pgcli.main
-The pgcli.main module is not an IPython extension.
+# IPython Console
 
 In [2]: %load_ext pgcli.magic
 
@@ -60,7 +63,7 @@ misago_testforum> SELECT * FROM django_migrations WHERE id = 5
 |    5 | admin | 0001_initial | 2014-11-24 14:26:43.625938-08:00 |
 +------+-------+--------------+----------------------------------+
 SELECT 1
-misago_testforum>
+misago_testforum> exit
 GoodBye!
 1 rows affected.
 
