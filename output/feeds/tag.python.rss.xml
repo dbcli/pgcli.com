@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.python.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 03 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Embedding pgcli in IPython</title><link>http://pgcli.com/embedding-pgcli-in-ipython.html</link><description>&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.python.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 08 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Release v0.15.X</title><link>http://pgcli.com/v0.15.X.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This version adds more color schemes to the syntax highlighting. An attempt to
+add support for PyPy by using psycopg2cffi failed. Python 3 support for
+psycopg2cffi was only added recently and there are still a few corner cases
+where it fails.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Add syntax color styles to config. Try &lt;tt class="docutils literal"&gt;syntax_style=fruity&lt;/tt&gt;. Availble themes
+are &lt;cite&gt;manni&lt;/cite&gt;, &lt;cite&gt;igor&lt;/cite&gt;, &lt;cite&gt;xcode&lt;/cite&gt;, &lt;cite&gt;vim&lt;/cite&gt;, &lt;cite&gt;autumn&lt;/cite&gt;, &lt;cite&gt;vs&lt;/cite&gt;, &lt;cite&gt;rrt&lt;/cite&gt;, &lt;cite&gt;native&lt;/cite&gt;,
+&lt;cite&gt;perldoc&lt;/cite&gt;, &lt;cite&gt;borland&lt;/cite&gt;, &lt;cite&gt;tango&lt;/cite&gt;, &lt;cite&gt;emacs&lt;/cite&gt;, &lt;cite&gt;friendly&lt;/cite&gt;, &lt;cite&gt;monokai&lt;/cite&gt;,
+&lt;cite&gt;paraiso-dark&lt;/cite&gt;, &lt;cite&gt;colorful&lt;/cite&gt;, &lt;cite&gt;murphy&lt;/cite&gt;, &lt;cite&gt;bw&lt;/cite&gt;, &lt;cite&gt;pastie&lt;/cite&gt;, &lt;cite&gt;paraiso-light&lt;/cite&gt;,
+&lt;cite&gt;trac&lt;/cite&gt;, &lt;cite&gt;default&lt;/cite&gt;, &lt;cite&gt;fruity&lt;/cite&gt;.&lt;/li&gt;
+&lt;li&gt;Add auto-completion for COPY statements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Treat boolean values as strings instead of ints.&lt;/li&gt;
+&lt;li&gt;Make di, dv and dt to be schema aware. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make column name display unicode compatible.&lt;/li&gt;
+&lt;li&gt;Override the LESS options completely instead of appending to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-02-08:v0.15.X.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Embedding pgcli in IPython</title><link>http://pgcli.com/embedding-pgcli-in-ipython.html</link><description>&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
 well-suited to do data-analysis. It has integration for plotting, data-analysis
 libraries, parallel computing etc. &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/catherinedevlin/ipython-sql"&gt;IPython-sql&lt;/a&gt; is an IPython
