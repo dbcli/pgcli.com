@@ -29,6 +29,41 @@ are &lt;cite&gt;manni&lt;/cite&gt;, &lt;cite&gt;igor&lt;/cite&gt;, &lt;cite&gt;x
 &lt;li&gt;Override the LESS options completely instead of appending to it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.0</title><link href="http://pgcli.com/v0.16.0.html" rel="alternate"></link><updated>2015-02-08T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-02-08:v0.16.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This release adds Vi-keybindings, improvements to special commands (new
+additions ds and df) and a lot of annoyances. Many thanks to the
+contributors.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Add ds special command to show sequences.&lt;/li&gt;
+&lt;li&gt;Add Vi mode for keybindings. (Thanks: &lt;a class="reference external" href="https://github.com/jayzeng"&gt;Jay Zeng&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add a -v/--version flag to pgcli.&lt;/li&gt;
+&lt;li&gt;Add completion for TEMPLATE keyword and smart-completion for
+'CREATE DATABASE blah WITH TEMPLATE &amp;lt;tab&amp;gt;'. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add custom decoders to json/jsonb to emulate the behavior of psql. This
+removes the unicode prefix (eg: u'Éowyn') in the output. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add df special command to show functions. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make suggestions for special commands smarter. eg: dn - only suggests schemas. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Print out the version and other meta info about pgcli at startup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix a rare crash caused by adding new schemas to a database. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Make dt command honor the explicit schema specified in the arg. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;darikg&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Print BIGSERIAL type as Integer instead of Float.&lt;/li&gt;
+&lt;li&gt;Show completions for special commands at the beginning of a statement. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow special commands to work in a multi-statement case where multiple sql
+statements are separated by semi-colon in the same line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Embedding pgcli in IPython</title><link href="http://pgcli.com/embedding-pgcli-in-ipython.html" rel="alternate"></link><updated>2015-02-03T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-02-03:embedding-pgcli-in-ipython.html</id><summary type="html">&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
 well-suited to do data-analysis. It has integration for plotting, data-analysis
 libraries, parallel computing etc. &lt;/p&gt;
