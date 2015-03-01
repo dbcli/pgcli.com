@@ -1,7 +1,7 @@
 Release v0.16.0
 ###############
 
-:date: 2015-02-08
+:date: 2015-03-01
 :tags: python, release, changelog, postgres
 :category: Blog
 :slug: v0.16.0
