@@ -16,7 +16,7 @@ auto-completion and syntax highlighting. You can install this version by:
 Check `detailed instructions`_ if you're having difficulty.
 
 This release adds Vi-keybindings, improvements to special commands (new
-additions \ds and \df) and a lot of annoyances. Many thanks to the
+additions \ds and \df) and fix a lot of annoyances. Many thanks to the
 contributors.
 
 Features:

@@ -6,7 +6,7 @@ auto-completion and syntax highlighting. You can install this version by:&lt;/p&
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release adds Vi-keybindings, improvements to special commands (new
-additions ds and df) and a lot of annoyances. Many thanks to the
+additions ds and df) and fix a lot of annoyances. Many thanks to the
 contributors.&lt;/p&gt;
 &lt;div class="section" id="features"&gt;
 &lt;h2&gt;Features:&lt;/h2&gt;
