@@ -12,7 +12,7 @@ contributors.&lt;/p&gt;
 &lt;h2&gt;Features:&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Add ds special command to show sequences.&lt;/li&gt;
-&lt;li&gt;Add Vi mode for keybindings. (Thanks: &lt;a class="reference external" href="https://github.com/jayzeng"&gt;Jay Zeng&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add Vi mode for keybindings. This can be enabled by adding 'vi = True' in ~/.pgclirc. (Thanks: &lt;a class="reference external" href="https://github.com/jayzeng"&gt;Jay Zeng&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Add a -v/--version flag to pgcli.&lt;/li&gt;
 &lt;li&gt;Add completion for TEMPLATE keyword and smart-completion for
 'CREATE DATABASE blah WITH TEMPLATE &amp;lt;tab&amp;gt;'. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
