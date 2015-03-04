@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-03-01T00:00:00-08:00</updated><entry><title>Release v0.16.0</title><link href="http://pgcli.com/v0.16.0.html" rel="alternate"></link><updated>2015-03-01T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-01:v0.16.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-03-03T00:00:00-08:00</updated><entry><title>Release v0.16.1</title><link href="http://pgcli.com/v0.16.1.html" rel="alternate"></link><updated>2015-03-03T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-03:v0.16.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This is a minor bug-fix release that fixes unicode issues with hstore.&lt;/p&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix unicode issues with hstore. Previously the unicode type caster for hstore
+was done via a hardcoded oid. This is wrong since the oid for hstore will
+vary between different databases. Now the oid is determined at the time of
+connection and a type caster is registered accordingly.&lt;/li&gt;
+&lt;li&gt;Fix an error when database is changed using \c.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.0</title><link href="http://pgcli.com/v0.16.0.html" rel="alternate"></link><updated>2015-03-01T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-01:v0.16.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli

@@ -41,10 +41,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.16.0.html">Release v0.16.0</a></h1>
+                    <h1 class="entry-title"><a href="../v0.16.1.html">Release v0.16.1</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-03-01T00:00:00-08:00">
-                Published: Sun 01 March 2015
+        <abbr class="published" title="2015-03-03T00:00:00-08:00">
+                Published: Tue 03 March 2015
         </abbr>
 
         <address class="vcard author">
@@ -58,33 +58,15 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <span class="nv">$ </span>pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release adds Vi-keybindings, improvements to special commands (new
-additions ds and df) and fix a lot of annoyances. Many thanks to the
-contributors.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Add ds special command to show sequences.</li>
-<li>Add Vi mode for keybindings. This can be enabled by adding 'vi = True' in ~/.pgclirc. (Thanks: <a class="reference external" href="https://github.com/jayzeng">Jay Zeng</a>)</li>
-<li>Add a -v/--version flag to pgcli.</li>
-<li>Add completion for TEMPLATE keyword and smart-completion for
-'CREATE DATABASE blah WITH TEMPLATE &lt;tab&gt;'. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
-<li>Add custom decoders to json/jsonb to emulate the behavior of psql. This
-removes the unicode prefix (eg: u'Éowyn') in the output. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
-<li>Add df special command to show functions. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-<li>Make suggestions for special commands smarter. eg: dn - only suggests schemas. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-<li>Print out the version and other meta info about pgcli at startup.</li>
-</ul>
-</div>
+<p>This is a minor bug-fix release that fixes unicode issues with hstore.</p>
 <div class="section" id="bug-fixes">
 <h2>Bug Fixes:</h2>
 <ul class="simple">
-<li>Fix a rare crash caused by adding new schemas to a database. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-<li>Make dt command honor the explicit schema specified in the arg. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
-<li>Print BIGSERIAL type as Integer instead of Float.</li>
-<li>Show completions for special commands at the beginning of a statement. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
-<li>Allow special commands to work in a multi-statement case where multiple sql
-statements are separated by semi-colon in the same line.</li>
+<li>Fix unicode issues with hstore. Previously the unicode type caster for hstore
+was done via a hardcoded oid. This is wrong since the oid for hstore will
+vary between different databases. Now the oid is determined at the time of
+connection and a type caster is registered accordingly.</li>
+<li>Fix an error when database is changed using \c.</li>
 </ul>
 </div>
                 </article>
@@ -93,6 +75,35 @@ statements are separated by semi-colon in the same line.</li>
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.16.0.html" rel="bookmark"
+                           title="Permalink to Release v0.16.0">Release v0.16.0</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-03-01T00:00:00-08:00">
+                Published: Sun 01 March 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This release adds Vi-keybindings, improvements to special commands (new
+additions ds and df) and fix a lot ...</p>
+                <a class="readmore" href="../v0.16.0.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -152,40 +163,6 @@ auto-completion and syntax highlighting. You can upgrade using:</p>
 <ul class="simple">
 <li>Add alias completion support to ON keyword. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna ...</a></li></ul></div>
                 <a class="readmore" href="../v0.14.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.13.0.html" rel="bookmark"
-                           title="Permalink to Release v0.13.0">Release v0.13.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-01-14T00:00:00-08:00">
-                Published: Wed 14 January 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A small release that gets <tt class="docutils literal">pgcli</tt> closer to being a drop in replacement for
-<tt class="docutils literal">psql</tt>.</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Add -d/--dbname option to the commandline.
-eg: pgcli -d database</li>
-<li>Add the username as an argument after the database.
-eg: pgcli ...</li></ul></div>
-                <a class="readmore" href="../v0.13.0.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
