@@ -41,10 +41,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.16.1.html">Release v0.16.1</a></h1>
+                    <h1 class="entry-title"><a href="../v0.16.2.html">Release v0.16.2</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-03-03T00:00:00-08:00">
-                Published: Tue 03 March 2015
+        <abbr class="published" title="2015-03-22T00:00:00-07:00">
+                Published: Sun 22 March 2015
         </abbr>
 
         <address class="vcard author">
@@ -58,15 +58,17 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <span class="nv">$ </span>pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a minor bug-fix release that fixes unicode issues with hstore.</p>
+<p>This is a bug-fix release that improves auto-completion and formatting of large
+numbers in the output.</p>
 <div class="section" id="bug-fixes">
 <h2>Bug Fixes:</h2>
 <ul class="simple">
-<li>Fix unicode issues with hstore. Previously the unicode type caster for hstore
-was done via a hardcoded oid. This is wrong since the oid for hstore will
-vary between different databases. Now the oid is determined at the time of
-connection and a type caster is registered accordingly.</li>
-<li>Fix an error when database is changed using \c.</li>
+<li>Fix a bug where the schema qualifier was ignored by the auto-completion.
+As a result the suggestions for tables vs functions are cleaner. (Thanks: <a class="reference external" href="https://github.com/darikg">darikg</a>)</li>
+<li>Remove scientific notation when formatting large numbers. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
+<li>Add the FUNCTION keyword to auto-completion.</li>
+<li>Display NULL values as &lt;null&gt; instead of empty strings.</li>
+<li>Fix the completion refresh when <tt class="docutils literal">\connect</tt> is executed.</li>
 </ul>
 </div>
                 </article>
@@ -75,6 +77,38 @@ connection and a type caster is registered accordingly.</li>
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.16.1.html" rel="bookmark"
+                           title="Permalink to Release v0.16.1">Release v0.16.1</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-03-03T00:00:00-08:00">
+                Published: Tue 03 March 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This is a minor bug-fix release that fixes unicode issues with hstore.</p>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Fix unicode issues ...</li></ul></div>
+                <a class="readmore" href="../v0.16.1.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -131,38 +165,6 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <p>This version adds more color schemes to the syntax highlighting. An attempt to
 add support for PyPy ...</p>
                 <a class="readmore" href="../v0.15.X.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.14.0.html" rel="bookmark"
-                           title="Permalink to Release v0.14.0">Release v0.14.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-01-31T00:00:00-08:00">
-                Published: Sat 31 January 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A huge release that adds completion support for schemas.</p>
-<p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can upgrade using:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Add alias completion support to ON keyword. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna ...</a></li></ul></div>
-                <a class="readmore" href="../v0.14.0.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
