@@ -15,8 +15,9 @@ auto-completion and syntax highlighting. You can install this version by:
 
 Check `detailed instructions`_ if you're having difficulty.
 
-This is a bug-fix release that improves auto-completion and formatting of large
-numbers in the output.
+This is a minor bug-fix release that fixes the syntax-highlighting of various
+Postgres specific keywords and adds the ability to surface messages thrown by
+sql exceptions.
 
 Bug Fixes:
 ----------
