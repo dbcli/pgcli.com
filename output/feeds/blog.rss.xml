@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/blog.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 02 Apr 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/blog.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 05 Apr 2015 00:00:00 -0700</lastBuildDate><item><title>Kickstarter: mysql-cli</title><link>http://pgcli.com/mysql-cli-kickstarter.html</link><description>&lt;p&gt;I'm starting a project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt; will be a command line client for MySQL, with
+auto-completion and syntax highlighting. An equivalent of
+&lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for MySQL database.&lt;/p&gt;
+&lt;p&gt;I'm raising funds for the project through &lt;a href="http://mysql-cli.com"&gt;kickstarter&lt;/a&gt;.
+The goal is to compensate for the development time and resources (hosting,
+testing infrastructure, etc) as well as motivate me to keep going.&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/124121398" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;When I launched pgcli earlier this year I had high hopes for it. I anticipated
+that I might reach a hundred users and even a couple of contributions. I
+announced it on
+&lt;a href="https://twitter.com/amjithr/status/552491986255896576"&gt;Twitter&lt;/a&gt; and HackerNews
+and it took about an hour to reach 100 stars. By the second day it was a top
+trending repo in all of Github. Right now it is hovering near the 1600 mark for
+the number of stars, with more than 70 pull requests (merged). &lt;/p&gt;
+&lt;p&gt;During the first week of launch, I slept about 3 hours each night because the
+pull requests and issues came flooding. I made a personal resolve to answer
+every communique within 24 hours. This meant answering personal emails,
+responding to issues filed, reviewing pull requests etc. I
+&lt;a href="http://pgcli.com/about"&gt;vowed&lt;/a&gt; to be polite and respectful to my users and
+contributors and I've had nothing but pleasant interactions with them. &lt;/p&gt;
+&lt;p&gt;My hope is to provide the same level of dedication and support to
+&lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;. There is definitely a need for it, since
+every time I use the default MySQL client I want to scream obscenities at my
+computer and I can't be the only one. :)&lt;/p&gt;
+&lt;p&gt;The plan is to launch &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt; in July 2015 and open
+up the repo to public. If you want to get involved sooner, please back the
+project on &lt;a href="http://mysql-cli.com"&gt;kickstarter&lt;/a&gt; and I'll add you to the early access list. :)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 05 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-05:mysql-cli-kickstarter.html</guid><category>python</category><category>mysql</category></item><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
