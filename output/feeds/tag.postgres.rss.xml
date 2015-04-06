@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.postgres.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 02 Apr 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.postgres.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 06 Apr 2015 00:00:00 -0700</lastBuildDate><item><title>Screencast: pgcli basics</title><link>http://pgcli.com/pgcli-basics-screencast.html</link><description>&lt;p&gt;I created a screencast to showcase some of the basic features of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This video covers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Installation&lt;/li&gt;
+&lt;li&gt;Launching pgcli&lt;/li&gt;
+&lt;li&gt;Switching databases&lt;/li&gt;
+&lt;li&gt;Basic auto-completion for SELECT, CREATE, INSERT and JOIN statements.&lt;/li&gt;
+&lt;li&gt;Expanded output&lt;/li&gt;
+&lt;li&gt;Multi-line mode    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Video:&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/124125257" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If there is enough interest, I'll produce a few more screencasts of other
+features available in &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;. Please reach me via
+&lt;a href="https://twitter.com/amjithr"&gt;twitter&lt;/a&gt; or &lt;a href="mailto:amjith.r@gmail.com"&gt;email&lt;/a&gt; to
+provide feedback.&lt;/p&gt;
+&lt;p&gt;I'm also working on a new project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.
+I've launched a
+&lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter&lt;/a&gt;
+campaign for that project and I'd like your support. Please forward the
+&lt;a href="http://mysql-cli.com"&gt;project&lt;/a&gt; to your friends and coworkers.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Mon, 06 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-06:pgcli-basics-screencast.html</guid><category>python</category><category>screencast</category><category>postgres</category></item><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
