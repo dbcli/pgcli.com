@@ -6,6 +6,8 @@ Slug: pgcli-basics-screencast
 
 I created a screencast to showcase some of the basic features of [pgcli](http://pgcli.com).
 
+pgcli is a client for postgres that can do autocompletion and syntax highlighting.
+
 This video covers:
 
 * Installation

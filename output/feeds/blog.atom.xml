@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-04-06T00:00:00-07:00</updated><entry><title>Screencast: pgcli basics</title><link href="http://pgcli.com/pgcli-basics-screencast.html" rel="alternate"></link><updated>2015-04-06T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-06:pgcli-basics-screencast.html</id><summary type="html">&lt;p&gt;I created a screencast to showcase some of the basic features of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;pgcli is a client for postgres that can do autocompletion and syntax highlighting.&lt;/p&gt;
 &lt;p&gt;This video covers:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Installation&lt;/li&gt;
