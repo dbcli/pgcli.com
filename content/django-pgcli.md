@@ -39,4 +39,4 @@ That's it.
 
 ### Credit
 
-My personal thanks to [Ash Christopher](https://github.com/ashchristopher/) for taking the initiative to create this package. It was a well requested feature of pgcli, so you just made a lot of people happy. 
+My personal thanks to [Ash Christopher](https://github.com/ashchristopher/) for taking the initiative to create this package. It was a well requested feature of pgcli, you just made a lot of people happy. 
