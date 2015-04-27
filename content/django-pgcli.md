@@ -21,7 +21,7 @@ Then add `django_pgcli` to the list of INSTALLED_APPS in your project's settings
 ```
     INSTALLED_APPS = [
         ...,
-        'django_pgsql',
+        'django_pgcli',
     ]
 ```
 
