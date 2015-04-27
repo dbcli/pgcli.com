@@ -16,7 +16,7 @@ Darik is a prolific committer who is credited for numerous feature additions in 
 
 # [Iryna Cherniavska](https://github.com/j-bennet)
 
-Iryna is one of the earliest contributors to the project. She is credited for adding a rich set of tests to the completion engine and brought in mocks to test some of the tricky bits. She also added many of the special commands such as `\dv, \di, \e` and contributed to the [developer document](https://github.com/dbcli/pgcli/blob/master/DEVELOP.rst#adding-postgresql-special-meta-commands).
+Iryna is one of the earliest contributors to the project. She is credited for adding a rich set of tests to the completion engine and brought in mocks to test some of the tricky bits. She also added many of the special commands such as `\dv, \di, \e` and contributed to the [developer document](https://github.com/dbcli/pgcli/blob/master/DEVELOP.rst#adding-postgresql-special-meta-commands). Favorite editor: PyCharm (yes, spoiled by JetBrains products). Favorite feature of pgcli: syntax highlighting. Random tidbit of information: started her acquaintance with the WWW through FIDOnet.
 
 # [Karl-Aksel Puulmann](https://github.com/macobo)
 
