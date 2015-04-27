@@ -11,7 +11,7 @@ heart felt thanks for contributing.
 GitHub Workflow
 ---------------
 
-The source code is hosted by Github: https://github.com/amjith/pgcli
+The source code is hosted by Github: https://github.com/dbcli/pgcli
 
 If you already know how to fork a project and send pull requests to it using
 github, you can safely skip this section.
@@ -35,7 +35,7 @@ The basic steps are:
 
    .. code:: bash
 
-       git remote add upstream git@github.com:amjith/pgcli.git
+       git remote add upstream git@github.com:dbcli/pgcli.git
 
 #. Make the necessary changes in your local machine. Commit and push to your
    fork. 
@@ -105,6 +105,6 @@ you have a change and it happens to be failing on one of the Python version
 (typically on Python 3), don't worry about it. Just open a pull request and we
 can help you get it fixed before merging.
 
-.. _pgcli: https://github.com/amjith/pgcli
+.. _pgcli: https://github.com/dbcli/pgcli
 .. _`py.test`: http://pytest.org/latest/
-.. _`Travis CI`: https://travis-ci.org/amjith/pgcli
+.. _`Travis CI`: https://travis-ci.org/dbcli/pgcli

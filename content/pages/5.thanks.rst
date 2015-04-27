@@ -44,7 +44,7 @@ github issue_.
 
 .. _email: mailto:amjith[dot]r[at]gmail.com
 .. _tweet: http://twitter.com/amjithr
-.. _issue: https://github.com/amjith/pgcli/issues 
+.. _issue: https://github.com/dbcli/pgcli/issues 
 
 Contributors:
 -------------

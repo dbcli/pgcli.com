@@ -15,7 +15,7 @@ MailingList - GoogleGroups_
 
 Chat - Gitter_
 
-Github - https://github.com/amjith/pgcli
+Github - https://github.com/dbcli/pgcli
 
 Personal
 =========
@@ -29,7 +29,7 @@ I'll try my best to answer you.
 .. _Email: mailto:amjith[dot]r[at]gmail[dot]com
 .. _GoogleGroups: https://groups.google.com/forum/#!forum/pgcli
 .. _Twitter: https://twitter.com/amjithr 
-.. _Github: https://github.com/amjith/pgcli
+.. _Github: https://github.com/dbcli/pgcli
 
 Responsibility
 --------------
@@ -77,4 +77,4 @@ a faux pas.
 
 .. _Amjith: https://github.com/amjith 
 .. _pgcli: http://pgcli.com
-.. _Gitter: https://gitter.im/amjith/pgcli/
+.. _Gitter: https://gitter.im/dbcli/pgcli/

@@ -81,7 +81,7 @@ knows the answers for them.
 
 #. **What is the license for pgcli?**
 
-   BSD 3-clause license. https://github.com/amjith/pgcli/blob/master/LICENSE.txt
+   BSD 3-clause license. https://github.com/dbcli/pgcli/blob/master/LICENSE.txt
 
 #. **How can I get support for pgcli?**
 
@@ -114,7 +114,7 @@ knows the answers for them.
    South Indian, North Indian, Thai, Mexican, Mediterranean, Ethiopian,
    Japanese, Chinese, Sandwiches, Salads. In that order. 
 
-.. _Issues: https://github.com/amjith/pgcli/issues
+.. _Issues: https://github.com/dbcli/pgcli/issues
 .. _BPython: http://www.bpython-interpreter.org/
 .. _`Dumb Terminals`: http://en.wikipedia.org/wiki/Computer_terminal#Dumb_terminals
 .. _psql: http://www.postgresql.org/docs/9.2/static/app-psql.html
@@ -124,4 +124,4 @@ knows the answers for them.
 .. _contact: {filename}/pages/6.about.rst
 .. _touch: {filename}/pages/6.about.rst
 .. _`mailing list`:  https://groups.google.com/forum/#!forum/pgcli
-.. _Gitter: https://gitter.im/amjith/pgcli
+.. _Gitter: https://gitter.im/dbcli/pgcli
