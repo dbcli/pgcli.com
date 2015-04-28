@@ -9,7 +9,9 @@ It is my pleasure to announce the core devs of the pgcli project.
 
 # [Daniel Rocco](https://github.com/drocco007)
 
-Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests to cover a lot more branches in the code path. 
+Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests to cover a lot more branches in the code path.
+
+Daniel loves Python and is a frequent speaker at PyAtl on introductory topics, testing, design, and shiny things; he loves seeing the spark of wonder and delight in people's eyes when someone shares a novel, surprising, or beautiful idea. He lives in Atlanta with a microbiologist and four aspiring rocketeers.
 
 # [Darik Gamble](https://github.com/darikg)
 
