@@ -3,7 +3,6 @@ Date: 2015-04-26
 Category: Blog
 Tags: python 
 Slug: core-1
-Status: draft
 
 It is my pleasure to announce the core devs of the pgcli project. 
 
