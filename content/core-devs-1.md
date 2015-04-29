@@ -1,5 +1,5 @@
 Title: Introducing the core devs of pgcli
-Date: 2015-04-26
+Date: 2015-04-28
 Category: Blog
 Tags: python 
 Slug: core-1
