@@ -15,10 +15,9 @@ auto-completion and syntax highlighting. You can install this version by:
 
 Check `detailed instructions`_ if you're having difficulty.
 
-This release comes with the latest version of prompt_tookit, improved
-auto-completion support, better matching algorithm in auto-completion, new
-special commands (``\e``, ``\dT``), fix CJK dispaly and a lot more. Thanks to
-the many contributors.
+This release comes with the ability to save favorite queries, fuzzy matching in
+auto-completion, new special commands (``\#``), fix unicode issues in Windows and 
+lot more. Thanks to the many contributors.
 
 Features:
 ---------
@@ -36,7 +35,7 @@ Features:
   The ``Command Time`` and ``Format Time`` are now displayed in seconds instead
   of a unitless number displayed in scientific notation.
 
-* Support for named queries (favorite queries). (Thanks: `Brett`_)
+* Support for named queries (favorite queries). (Thanks: `Brett Atoms`_)
 
   Frequently typed queries can now be saved and recalled using a name using
   newly added special commands (``\n[+]``, ``\ns``, ``\nd``).
@@ -60,12 +59,21 @@ Features:
 
 * Pasting queries into the pgcli repl is orders of magnitude faster. (Thanks: `Jonathan Slenders`_)
 
+* Add support for PGPASSWORD environment variable to pass the password for the
+  postgres database. (Thanks: `Iryna Cherniavska`_)
+
+* Add the ability to manually refresh autocompletions by typing ``\#`` or
+  ``\refresh``. This is useful if the database was updated by an external means
+  and you'd like to refresh the auto-completions to pick up the new change.
+
 
 Bug Fixes:
 ----------
 
 * Fix an error when running ``\d table_name`` when running on a table with rules. (Thanks: `Ali Kargın`_)
 * Fix a pgcli crash when entering non-ascii characters in Windows. (Thanks: `Darik Gamble`_, `Jonathan Slenders`_)
+* Faster rendering of expanded mode output by making the horizontal separator a fixed length string. 
+* Completion suggestions for the ``\c`` command are not auto-escaped by default. 
 
 Internal Changes:
 -----------------
@@ -73,10 +81,12 @@ Internal Changes:
 * Complete refactor of handling the back-slash commands. It is now easier to
   add new special back-slash commands using a decorator.
 * Upgrade prompt_toolkit to 0.39. (Thanks: `Jonathan Slenders`_)
-* Change the config file management to use ConfigObj.(Thanks: `Brett`_)
+* Change the config file management to use ConfigObj.(Thanks: `Brett Atoms`_)
+* Add integration tests using ``behave``. (Thanks: `Iryna Cherniavska`_)
 
 .. _`Darik Gamble`: https://github.com/darikg
 .. _`Jonathan Slenders`: https://github.com/jonathanslenders
+.. _`Iryna Cherniavska`: https://github.com/j-bennet
 .. _`detailed instructions`: {filename}/pages/1.install.rst 
 .. _`Ali Kargın`: https://github.com/sancopanco
-.. _`Brett`: https://github.com/brettatoms 
+.. _`Brett Atoms`: https://github.com/brettatoms 
