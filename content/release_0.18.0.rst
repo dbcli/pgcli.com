@@ -80,7 +80,7 @@ Internal Changes:
 
 * Complete refactor of handling the back-slash commands. It is now easier to
   add new special back-slash commands using a decorator.
-* Upgrade prompt_toolkit to 0.39. (Thanks: `Jonathan Slenders`_)
+* Upgrade prompt_toolkit to 0.42. (Thanks: `Jonathan Slenders`_)
 * Change the config file management to use ConfigObj.(Thanks: `Brett Atoms`_)
 * Add integration tests using ``behave``. (Thanks: `Iryna Cherniavska`_)
 
