@@ -37,11 +37,11 @@ knows the answers for them.
    instance. Please file bugs if it doesn't work on Windows.
 
 #. **Will there be an equivalent of this for Sqlite/MySql?**
+
+    There is already an equivalent for MySQL. Checkout: [http://mycli.net](http://mycli.net)
    
-   Probably. Now that I've worked out the hard parts (sqlcompletion and special
-   commands), I'd like to write a CLI for Sqlite and MySql. But I'm not sure if
-   I'll have the time to do it in the immediate future. But if you're
-   interested in doing it, I'd be happy to help you. Please get in touch_.
+    I don't have time to write an SQLite version. But if you're
+    interested in doing it, I'd be happy to help you. Please get in touch_.
 
 #. **What's the difference between Smart Completion and Naive Completion?**
 
