@@ -50,9 +50,9 @@ Bug Fixes:
 Internal Changes:
 -----------------
 
-* Added more behaviorial tests (Thanks: `Iryna Cherniavska`_)
+* Added more behavioral tests (Thanks: `Iryna Cherniavska`_)
 * Added code coverage to the tests. (Thanks: `Iryna Cherniavska`_)
-* Run behaviorial tests as part of TravisCI (Thanks: `Iryna Cherniavska`_)
+* Run behavioral tests as part of TravisCI (Thanks: `Iryna Cherniavska`_)
 * Upgraded prompt_toolkit version to 0.45 (Thanks: `Jonathan Slenders`_)
 * Update the minumum required version of click to 4.1.
 
