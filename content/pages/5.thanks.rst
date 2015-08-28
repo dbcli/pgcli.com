@@ -28,6 +28,8 @@ Pygments_ - Syntax highlighting.
 .. _Pygments: http://pygments.org/
 .. _Sqlparse: https://pypi.python.org/pypi/sqlparse
 
+Debian packages are hosted by packagecloud.io.
+
 Beta Testers:
 -------------
 
