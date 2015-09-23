@@ -3,6 +3,7 @@ Date: 2015-09-22
 Category: Blog
 Tags: python pgspecial
 Slug: pgspecial-release
+Author: Iryna Cherniavska
 
 The pgspecial package is now independent and has its own place on PyPI:
  
