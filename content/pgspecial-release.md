@@ -1,7 +1,7 @@
 Title: Pgspecial is now an independent module
 Date: 2015-09-22
 Category: Blog
-Tags: python pgspecial
+Tags: python, pgspecial
 Slug: pgspecial-release
 Author: Iryna Cherniavska
 
