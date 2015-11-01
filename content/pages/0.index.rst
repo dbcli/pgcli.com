@@ -4,7 +4,7 @@ pgcli
 :slug: index
 
 Pgcli is a command line interface for Postgres with auto-completion and syntax
-highlighting. 
+highlighting.
 
 * Source: https://github.com/dbcli/pgcli
 * Chat: Gitter_
@@ -39,13 +39,17 @@ Usage
 .. code:: bash
 
     $ pgcli --help
-    Usage: pgcli [OPTIONS] DATABASE
+    Usage: pgcli [OPTIONS] [DATABASE] [USERNAME]
 
     Options:
       -h, --host TEXT     Host address of the postgres database.
       -p, --port INTEGER  Port number at which the postgres instance is listening.
       -U, --user TEXT     User name to connect to the postgres database.
       -W, --password      Force password prompt.
+      -w, --no-password   Never prompt for password.
+      -v, --version       Version of pgcli.
+      -d, --dbname TEXT   database name to connect to.
+      --pgclirc TEXT      Location of pgclirc file.
       --help              Show this message and exit.
 
 Examples
