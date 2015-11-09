@@ -5,6 +5,7 @@ Release v0.20.1
 :tags: python, release, changelog, postgres
 :category: Blog
 :slug: v0.20.1
+:author: Iryna Cherniavska
 
 ``Pgcli`` is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:
