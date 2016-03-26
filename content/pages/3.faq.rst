@@ -27,14 +27,10 @@ knows the answers for them.
 
 #. **Does pgcli work on Windows?**
 
-   The honest answer is, I don't know. All the underlying libraries used by
-   pgcli are cross-platform compatible (including Windows). But I have not had
-   the opportunity to try it on Windows. It is mainly because I don't have a
-   windows machine to try this and I'm too lazy to try and provision an Azure
-   instance.
-
-   If there is enough interest, I will get off my lazy bum and buy an Azure
-   instance. Please file bugs if it doesn't work on Windows.
+   Yes! It does. One of our prominent core developers is a Windows user and he
+   tests the releases in Windows. A few caveats, if you don't have less.exe
+   installed on your system it uses ``more`` by default which is not very
+   feature full. It is also advisable to use `cmder`_ instead of ``cmd.exe``.
 
 #. **Will there be an equivalent of this for Sqlite/MySql?**
 
@@ -125,3 +121,4 @@ knows the answers for them.
 .. _touch: {filename}/pages/6.about.rst
 .. _`mailing list`:  https://groups.google.com/forum/#!forum/pgcli
 .. _Gitter: https://gitter.im/dbcli/pgcli
+.. _cmder: http://cmder.net/
