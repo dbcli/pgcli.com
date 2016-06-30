@@ -66,15 +66,6 @@ knows the answers for them.
    compensate for those corner cases. Which resulted in a lot of testing and
    patching those cases with one off 'if-conditions'. 
 
-#. **Why is this not version 1.0?**
-
-   The backbone of pgcli is `Python-Prompt-Toolkit`_. Prompt Toolkit is awesome at
-   what it does, but the APIs for the library are still evolving. So I'm
-   hesitant to mark pgcli as 1.0, since pgcli will also be changing to keep up
-   with the changes in Prompt Toolkit. I'll probably release v1.0 when
-   Python-Prompt-Toolkit goes 1.0.
-
-
 #. **What is the license for pgcli?**
 
    BSD 3-clause license. https://github.com/dbcli/pgcli/blob/master/LICENSE.txt
