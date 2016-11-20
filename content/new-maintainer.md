@@ -3,7 +3,6 @@ Date: 2016/11/20
 Category: Blog
 Tags: python 
 Slug: irina
-Status: draft
 
 
 About 2 years ago I (Amjith) made a modest announcement about launching `pgcli` a CLI
