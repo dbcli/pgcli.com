@@ -5,7 +5,6 @@ Tags: python
 Slug: irina
 Status: draft
 
-<img src='/images/irina.png' />
 
 About 2 years ago I (Amjith) made a modest announcement about launching `pgcli` a CLI
 client for Postgres with auto-completion. Since then `pgcli` has grown at a
@@ -14,6 +13,8 @@ merged 320 pull requests from over 60 different contributors. We established a
 core team which has 7 team members and we're always looking for interested
 folks to join the team. Our only requirement is "be nice and welcoming to
 everyone".
+
+<img src='/images/irina.png' />
 
 I'm happy to announce that [Irina](https://github.com/j-bennet) has volunteered
 to take over the role of maintaining the pgcli project. I will be staying as
