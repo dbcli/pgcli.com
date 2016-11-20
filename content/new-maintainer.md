@@ -2,8 +2,10 @@ Title: New Maintainer for pgcli - Irina
 Date: 2016/11/20
 Category: Blog
 Tags: python 
-Slug: iryna
+Slug: irina
 Status: draft
+
+<img src='/images/irina.png' />
 
 About 2 years ago I (Amjith) made a modest announcement about launching `pgcli` a CLI
 client for Postgres with auto-completion. Since then `pgcli` has grown at a
