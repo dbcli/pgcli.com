@@ -14,7 +14,7 @@ core team which has 7 team members and we're always looking for interested
 folks to join the team. Our only requirement is "be nice and welcoming to
 everyone".
 
-<img src='/images/irina.png' />
+<img src='/images/irina.png' width=750px align=center alt='Irina'/>
 
 I'm happy to announce that [Irina](https://github.com/j-bennet) has volunteered
 to take over the role of maintaining the pgcli project. I will be staying as
