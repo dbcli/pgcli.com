@@ -12,7 +12,7 @@ I have not personally tested this on Windows, but all the underlying libraries
 used by this project are cross-platform compatible including Windows. If you
 have a Windows machine, I'd very much appreciate if you could test it out and
 let me know. I do want to support Windows, I just don't have the resources
-right now. 
+right now.
 
 Quick start:
 ============
@@ -23,34 +23,27 @@ If you already know how to install python packages, then you can do:
 
     $ pip install pgcli
 
-    or 
+    or
 
     $ easy_install pgcli
 
-You might need ``sudo``. 
+You might need ``sudo``.
 
 Detailed:
 =========
 
-Mac OS X:
-~~~~~~~~~
+macOS:
+~~~~~~
 
-The easiest way install ``pgcli`` in an OS X machine is to use homebrew_.
-Please be aware that this will install postgresql via homebrew. 
+The easiest way install ``pgcli`` on an macOS machine is to use Homebrew_.
+Please be aware that this will install postgresql if it's not already installed.
 
 .. code:: bash
 
+    $ brew tap-pin dbcli/tap
     $ brew install pgcli
 
 That's it. You can now launch it by typing ``pgcli`` on the command line.
-
-If you have Postgresql installed via different means instead of brew, you can try: 
-
-.. code:: bash
-
-    $ brew install --build-from-source pgcli
-
-This will skip installing Postgresql, if it is already available in the $PATH.
 
 Alternatively, since ``pgcli`` is a python package you can install it via the
 python package manager ``pip``. There is also an older package manager known as
@@ -63,18 +56,18 @@ Check if ``pip`` is installed on the system.
     $ which pip
 
 If the above command returns an error, then you do not have pip installed on
-your computer. 
+your computer.
 
-Most OS X systems comes pre-installed with python and ``easy_install``. You can
+Most macOS systems comes pre-installed with python and ``easy_install``. You can
 use easy_install to install ``pip``.
 
 .. code:: bash
 
     $ sudo easy_install pip
-    
+
 ``pgcli`` uses ``psycopg`` to talk to postgres database. In order to install
 psycopg, you will need libpq installed on your system. The easiest way to get
-the necessary libraries, is to install postgresql on your system. 
+the necessary libraries, is to install postgresql on your system.
 
 .. code:: bash
 
@@ -83,7 +76,7 @@ the necessary libraries, is to install postgresql on your system.
 You will also need C compiler installed on your system in order to compile the
 required files for psycopg. Install XCode from AppStore and then install the
 CommandLineTools which will install gcc or an equivalent C compiler on your
-system. I typically do the following: 
+system. I typically do the following:
 
 .. code:: bash
 
@@ -133,7 +126,7 @@ on your system.
 
     $ sudo apt-get install libpq-dev python-dev   # debian
 
-    or 
+    or
 
     $ sudo yum install postgresql-devel python-devel  # redhat
 
@@ -145,6 +138,6 @@ Now that the required dependencies are satisfied you are ready to install
     $ sudo pip install pgcli
 
 If you're having trouble getting this installed please feel free to `contact
-<{filename}/pages/6.about.rst>`_ me. 
+<{filename}/pages/6.about.rst>`_ me.
 
-.. _homebrew: http://brew.sh/
+.. _Homebrew: http://brew.sh/
