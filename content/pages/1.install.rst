@@ -6,7 +6,7 @@ Install
 Compatibility:
 ==============
 
-Tested on OS X and Linux. Runs on Python 2.7 and 3.3+.
+Tested on macOS and Linux. Runs on Python 2.7 and 3.3+.
 
 I have not personally tested this on Windows, but all the underlying libraries
 used by this project are cross-platform compatible including Windows. If you
