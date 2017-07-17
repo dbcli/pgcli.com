@@ -54,7 +54,7 @@ History in pgcli is unlimited. But pgcli has no option to separate the history
 for different databases. 
 
 The feature described in the blogpost talks about a cool feature to store the
-history of a sessio scoped to a database. This is an awesome feature that we
+history of a session scoped to a database. This is an awesome feature that we
 might adopt in pgcli in the future versions.
 
 ## Output Formatting
