@@ -71,6 +71,19 @@ has to be enabled via the config file (~/.config/pgcli/config) by the user.
 
 I don't think we'll change this behavior. 
 
+## Keyword Casing
+
+One of the psql options is to choose either the upper case or lower case for
+keyword completion. So when you type `sel` and then hit tab, psql will
+auto-complete `SELECT` if upper-case was chosen as the option. 
+
+In pgcli we have those explicit 'upper' and 'lower' options. In addition we
+have an 'auto' option which is set as default. This will choose the casing
+based on what the user has typed so far. So if you type `sel` and hit tab,
+pgcli will suggest `select`, whereas if you type `SEL` and hit tab it will
+suggest `SELECT`. I'm sure there is a way achieve this in psql, but this is the
+option that pgcli ships with.
+
 ## Conclusion
 
 We have plenty of other config options that ship with default values. You can
