@@ -73,4 +73,8 @@ I don't think we'll change this behavior.
 
 ## Conclusion
 
-I'd say we did a pretty good job on the sensible defaults goal. :)
+We have plenty of other config options that ship with default values. You can
+see a list of all the config values in `~/.config/pgcli/config` if you have
+pgcli installed or you can checkout the
+[pgclirc](https://github.com/dbcli/pgcli/blob/master/pgcli/pgclirc) file for a
+quick view. [Let us know](https://github.com/dbcli/pgcli/issues) how we did.
