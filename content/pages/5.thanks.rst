@@ -68,7 +68,7 @@ Contributors:
 * `Daniel Rocco`_
 * `Dionysis Grigoropoulos`
 * `Eric Workman`
-* `François Pietka`
+* `François Pietka`_
 * `Guewen Baconnier`
 * `Hans Roman`
 * `Jacob Magnusson`
@@ -85,3 +85,4 @@ Contributors:
 .. _`Karl-Aksel Puulmann`: https://github.com/macobo
 .. _`Stuart Quin`: https://github.com/stuartquin
 .. _`Daniel Schwarz`: https://github.com/qwesda
+.. _`François Pietka`: https://github.com/fpietka
