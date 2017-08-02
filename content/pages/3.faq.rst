@@ -34,7 +34,7 @@ knows the answers for them.
 
 #. **Will there be an equivalent of this for Sqlite/MySql?**
 
-    There is already an equivalent for MySQL. Checkout: [http://mycli.net](http://mycli.net)
+    There is already an equivalent for MySQL. Checkout: `http://mycli.net`_
    
     I don't have time to write an SQLite version. But if you're
     interested in doing it, I'd be happy to help you. Please get in touch_.
@@ -113,3 +113,4 @@ knows the answers for them.
 .. _`mailing list`:  https://groups.google.com/forum/#!forum/pgcli
 .. _Gitter: https://gitter.im/dbcli/pgcli
 .. _cmder: http://cmder.net/
+.. _http://mycli.net: http://mycli.net
