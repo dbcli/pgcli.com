@@ -40,7 +40,6 @@ Please be aware that this will install postgresql if it's not already installed.
 
 .. code:: bash
 
-    $ brew tap-pin dbcli/tap
     $ brew install pgcli
 
 That's it. You can now launch it by typing ``pgcli`` on the command line.
