@@ -3,9 +3,9 @@ About
 
 :slug: about
 
-Hi, [pgcli](https://www.pgcli.com) is maintained by the members of a secret
-coalition bent on world domination. Our fearless leader is [Irina
-Truong](https://github.com/j-bennet).
+Hi, `pgcli`_ is maintained by the members of a secret
+coalition bent on world domination. Our fearless leader is `Irina
+Truong`_.
 
 We prioritize being nice more than being right. We built pgcli to make it
 pleasant to work with Postgres databases. 
@@ -43,6 +43,7 @@ There is one exception.
 If you're being aggressive or insulting we will politely let you know that
 you're being unpleasant and I will stop responding.
 
-.. _Amjith: https://github.com/amjith 
+.. _Amjith: https://github.com/amjith
+.. _Irina Truong: https://github.com/j-bennet
 .. _pgcli: http://pgcli.com
 .. _Gitter: https://gitter.im/dbcli/pgcli/
