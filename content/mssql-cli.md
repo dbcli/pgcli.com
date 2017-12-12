@@ -18,7 +18,7 @@ writing a tool for SQL Server based on `pgcli` and `mycli`. The new tool named
 alias support, paged output and so on. Essentially all the niceties of `pgcli`
 that works with SQL Server.
 
-Here's the [official announcement]() from Microsoft.
+Here's the [official announcement](https://blogs.technet.microsoft.com/dataplatforminsider/2017/12/12/try-mssql-cli-a-new-interactive-command-line-tool-for-sql-server/) from Microsoft.
 
 # Backstory:
 
