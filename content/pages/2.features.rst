@@ -80,3 +80,51 @@ Output of an sql command is automatically piped through ``less`` command.
    :alt: Special Commands
    :align: center
    :width: 750px
+
+Favorite (named) queries
+------------------------
+
+It is possible to store a query by name and reuse it later.
+
+Example:
+
+1. Store the query ``select 1`` as ``foo``.
+
+.. code::
+
+      \ns foo select 1
+
+2. Execute named query ``foo``.
+
+.. code::
+
+      \n foo
+      > select 1
+      +----------+
+      | ?column? |
+      +----------+
+      | 1        |
+      +----------+
+      SELECT 1
+
+Named queries can have substitution parameters. Parameters can be provided using:
+
+* ``$n`` notation (1...N).
+
+.. code::
+
+      \ns foo select $1
+      \n foo 1
+
+* bound variables.
+
+.. code::
+
+      \ns foo select %s
+      \n foo 1
+
+3. Delete named query foo.
+
+.. code::
+
+      \nd foo
