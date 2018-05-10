@@ -37,5 +37,5 @@ If you are curious to find out why you should use these tools instead of the
 default clients, swing by our booth. We'll be happy to convince you why these
 tools are awesome!
 
-We have stickers and t-shirts. Above all we're a bunch of Python geeks who'd love
-to shoot the shit with you.
+**We have stickers and t-shirts. Above all we're a bunch of Python geeks who'd love
+to shoot the shit with you.**
