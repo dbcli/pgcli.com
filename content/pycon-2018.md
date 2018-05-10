@@ -4,6 +4,10 @@ Category: Blog
 Tags: python, pycon
 Slug: pycon-2018
 
+
+<img src='/images/syntax/light/tango.png' width=750px align=center alt='screenshot'/>
+
+
 Do you love colorful, terminal applications?
 
 Are you going to Pycon this year?
