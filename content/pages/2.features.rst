@@ -116,13 +116,6 @@ Named queries can have substitution parameters. Parameters can be provided using
       \ns foo select $1
       \n foo 1
 
-* bound variables.
-
-.. code::
-
-      \ns foo select %s
-      \n foo 1
-
 3. Delete named query foo.
 
 .. code::
