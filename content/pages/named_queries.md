@@ -1,25 +1,25 @@
-Title: Favorite Queries
-Slug: favorites
+Title: Named Queries
+Slug: named_queries.md
 status: hidden
 
-Favorite Queries are a way to save frequently used queries
+Named Queries are a way to save frequently used queries
 with a short name.
 
-`\n` - list all favorite queries.
+`\n` - list all named queries.
 
-`\n <name>` - Invoke a favorite query by its name.
+`\n <name>` - Invoke a named query by its name.
 
-`\ns <name> <query>` - Save a new favorite query called 'name'.
+`\ns <name> <query>` - Save a new named query called 'name'.
 
-`\nd <name>` - Delete an existing favorite query by its name.
+`\nd <name>` - Delete an existing named query by its name.
 
 Examples:
 
 ```
-    # Save a new favorite query.
+    # Save a new named query.
     > \ns simple select * from abc where a is not Null;
 
-    # List all favorite queries.
+    # List all named queries.
     > \n
     +--------+---------------------------------------+
     | Name   | Query                                 |
@@ -27,7 +27,7 @@ Examples:
     | simple | SELECT * FROM abc where a is not NULL |
     +--------+---------------------------------------+
 
-    # Run a favorite query.
+    # Run a named query.
     > \n simple
     +--------+--------+
     | a      | b      |
@@ -35,14 +35,14 @@ Examples:
     | 日本語 | 日本語   |
     +--------+--------+
 
-    # Delete a favorite query.
+    # Delete a named query.
     > \nd simple
     simple: Deleted
 ```
 
 ## Positional Parameters
 
-Favorite queries support shell-style parameter substitution. Save your favorite
+Named queries support shell-style parameter substitution. Save your named
 query with parameters as placeholders (e.g. `$1`, `$2`,
 `$3`, etc.):
 
@@ -50,7 +50,7 @@ query with parameters as placeholders (e.g. `$1`, `$2`,
 \ns user_by_name select * from users where name = '$1'
 ```
 
-When you call a favorite query with parameters, just add the parameters after
+When you call a named query with parameters, just add the parameters after
 the query's name. You can put quotes around arguments that include spaces.
 
 ```
