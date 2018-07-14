@@ -15,7 +15,7 @@ auto-completion and syntax highlighting. You can install this version using:
    $ pip install -U pgcli
 
 This release adds new special commands ``\ev`` and ``\ef``, more table formats,
-and a `--user` alias for `--username` option, to be compatible with psql. ``Pgcli``
+and a ``--user`` alias for ``--username`` option, to be compatible with psql. ``Pgcli``
 also sets ``application_name`` to identify itself within postgres. Multiple bugs
 were fixed.
 
