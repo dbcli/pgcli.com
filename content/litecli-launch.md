@@ -1,4 +1,4 @@
-Title: "Launching LiteCLI"
+Title: Launching LiteCLI
 Tags: python, sqlite
 Category: Blog
 Date: 2019-01-03
@@ -19,7 +19,7 @@ It is developed by a team of core devs from around the world. We are friendly
 and welcoming to newcomers. 
 
 The project is lead by [Delgermurun](https://github.com/delgermurun). The
-core team constitutes [Irina Truong](https://github.com/j-bennet),
+core team includes [Irina Truong](https://github.com/j-bennet),
 [Dick Marinus](https://github.com/meeuw), [Zhaolong Zhu](https://github.com/zzl0) and [Amjith](https://github.com/amjith)
 
 If you're interested in using the project, check out the quick start guide or the installation guide. 
