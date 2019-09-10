@@ -136,7 +136,21 @@ Now that the required dependencies are satisfied you are ready to install
 
     $ sudo pip install pgcli
 
-If you're having trouble getting this installed please feel free to `contact
+What about psycopg2-binary:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Psycopg2`` maintainers do not recommend using binary package version for production,
+this is why ``pgcli`` specifies the source package (``psycopg2``) as dependency, vs ``psycopg2-binary``:
+
+http://initd.org/psycopg/docs/install.html#binary-install-from-pypi
+
+However, this workaround may help if you're unable to build the source ``psycopg2`` package:
+
+.. code:: bash
+
+    $ pip install pgcli --only-binary psycopg2
+
+If you're still having trouble getting ``pgcli`` installed, please feel free to `contact
 <{filename}/pages/6.about.rst>`_ me.
 
 .. _Homebrew: http://brew.sh/
