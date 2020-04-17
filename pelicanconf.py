@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Amjith'
 SITENAME = u'pgcli'
-SITEURL = 'http://pgcli.com'
+SITEURL = 'https://www.pgcli.com'
 
 PATH = 'content'
 
