@@ -47,4 +47,3 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 THEME = 'theme/notmyidea'
 
-GOOGLE_ANALYTICS = 'UA-58061452-1'
