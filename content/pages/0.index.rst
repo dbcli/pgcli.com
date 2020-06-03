@@ -3,6 +3,11 @@ pgcli
 
 :slug: index
 
+BlackLivesMatter
+================
+
+**We value the diversity of our community. We strive to amplify the voices of the oppressed to eradicate racism and xenophobia. We ask our community to stand together in support of the Black community.**
+
 Pgcli is a command line interface for Postgres with auto-completion and syntax
 highlighting.
 
