@@ -93,7 +93,7 @@ Examples
 Request
 =======
 
-If you know how to  debian package or RPM pacakge for Python applications
+If you know how to  debian package or RPM package for Python applications
 please get in touch_.
 
 .. _install: {filename}/pages/1.install.rst
