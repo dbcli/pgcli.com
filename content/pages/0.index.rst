@@ -33,7 +33,7 @@ install postgresql if you don't already have it.
 
 .. code:: bash
 
-   $ brew tap-pin dbcli/tap
+   $ brew tap dbcli/tap
    $ brew install pgcli
 
 If you're having trouble with the quick start, check the install_ page for
