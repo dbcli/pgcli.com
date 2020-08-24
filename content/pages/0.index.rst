@@ -90,6 +90,14 @@ Examples
 
     $ pgcli -h localhost -p 5432 -U amjith app_db
 
+**note:** While using ``@`` or special symbol in password, do encode and quote it.
+
+.. code:: bash
+
+    $ pgcli 'postgresql://amjith:%40postgres@localhost:5432/app_db'
+
+    $ pgcli -h localhost -U amjith -W '@postgres' -d app_db
+
 Request
 =======
 
