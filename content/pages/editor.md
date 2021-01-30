@@ -10,7 +10,8 @@ Here are some examples:
 
 ```
 
-# This will launch the default editor (read from $VISUAL or $EDITOR env variable, in that order).
+# This will launch the default editor (read from $VISUAL or $EDITOR
+# env variable, in that order).
 # It will put the previous query in the editor's buffer.
 > \e
 
