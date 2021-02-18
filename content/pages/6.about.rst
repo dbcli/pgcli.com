@@ -13,13 +13,8 @@ pleasant to work with Postgres databases.
 Project
 -------
 
-MailingList - GoogleGroups_
-
-Chat - Gitter_
-
 Github - https://github.com/dbcli/pgcli
 
-.. _GoogleGroups: https://groups.google.com/forum/#!forum/pgcli
 .. _Github: https://github.com/dbcli/pgcli
 
 Our Promise
@@ -46,4 +41,3 @@ you're being unpleasant and I will stop responding.
 .. _Amjith: https://github.com/amjith
 .. _Irina Truong: https://github.com/j-bennet
 .. _pgcli: http://pgcli.com
-.. _Gitter: https://gitter.im/dbcli/pgcli/
