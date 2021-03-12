@@ -72,8 +72,7 @@ knows the answers for them.
 
 #. **How can I get support for pgcli?**
 
-   There is a `mailing list`_ and Gitter_ chat. We also track our bugs and
-   feature requests in Github Issues_ for this project. 
+   We use Github Issues_ to communicate about this project.
 
 #. **I found a bug, what do I do?** 
 
