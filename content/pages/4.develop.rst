@@ -91,8 +91,8 @@ Tests are written using `py.test`_ testing framework. Install ``py.test`` by
 using ``pip install pytest`` in the virtualenv. Then execute the tests by
 calling ``py.test`` from the root of the project folder. 
 
-A test runner called ``tox`` is used to run the tests in Python 2.6, Python 2.7
-and Python 3.3. You can do ``pip install tox`` and call ``tox`` from the
+A test runner called ``tox`` is used to run the tests in multiple Python
+environments. You can do ``pip install tox`` and call ``tox`` from the
 project root to run the tests in all 3 python versions.
 
 If you'd like to run just one of the test files (say test_sqlcompletion.py)
