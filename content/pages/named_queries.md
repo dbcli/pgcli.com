@@ -56,3 +56,55 @@ the query's name. You can put quotes around arguments that include spaces.
 ```
 \n user_by_name "Skelly McDermott"
 ```
+
+## Parameters Aggregation
+
+Named queries also supports parameters aggregation via two placeholders.
+`$*` for raw aggregation and `$@` for string aggregation.
+The former use the raw value of aggregated parameters, the later will quote
+each aggregated value.
+
+### Raw Aggregation
+```
+\ns users_by_age select * from users where id in ($*)
+```
+
+When you call a named query with parameters, just add any (at least one)
+parameters after the query's name.
+
+```
+\n users_by_age 42 1337
+```
+
+### String Aggregation
+```
+\ns users_by_categories select * from users where category in ($@)
+```
+
+When you call a named query with parameters, just add any (at least one)
+the parameters after the query's name.
+You can put quotes around arguments that include spaces.
+
+```
+\n users_by_categories "home user" "mobile user" superuser
+```
+
+## Combining Positional Parameters and Parameters Aggregation
+It is possible to combine both positional parameters and parameters aggregation.
+The positional parameters substitution takes place before the aggregation.
+Which means positional parameters can be placed after parameters aggregation
+in the query ; see example bellow.
+Please note that the positional parameters will not be part of the aggregation taking place afterwards!
+
+```
+\ns users_by_categories_and_age select * from users where name in ($@) and age = $1
+```
+
+```
+\n users_by_categories_and_age 42 "Skelly McDermott" "François Pignon"
+```
+
+The query after substitution would be:
+```
+select * from users where name in ('Skelly McDermott', 'François Pignon') and age = 42
+```
