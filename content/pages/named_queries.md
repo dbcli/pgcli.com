@@ -59,9 +59,9 @@ the query's name. You can put quotes around arguments that include spaces.
 
 ## Parameters Aggregation
 
-Named queries also supports parameters aggregation via two placeholders.
+Named queries also support parameters aggregation via two placeholders.
 `$*` for raw aggregation and `$@` for string aggregation.
-The former use the raw value of aggregated parameters, the later will quote
+The former will use raw values of aggregated parameters, the later will quote
 each aggregated value.
 
 ### Raw Aggregation
@@ -82,7 +82,7 @@ parameters after the query's name.
 ```
 
 When you call a named query with parameters, just add any (at least one)
-the parameters after the query's name.
+parameters after the query's name.
 You can put quotes around arguments that include spaces.
 
 ```
