@@ -32,12 +32,12 @@ knows the answers for them.
    installed on your system it uses ``more`` by default which is not very
    feature full. It is also advisable to use `cmder`_ instead of ``cmd.exe``.
 
-#. **Will there be an equivalent of this for Sqlite/MySql?**
+#. **Will there be an equivalent of this for SQLite/MySQL?**
 
-    There is already an equivalent for MySQL. Checkout: `http://mycli.net`_
+   There is already an equivalent for both MySQL at https://www.mycli.net/ and
+   SQLite at https://litecli.com/.
    
-    I don't have time to write an SQLite version. But if you're
-    interested in doing it, I'd be happy to help you. Please get in touch_.
+   For an up-to-date list of all DBCLI clients, visit https://www.dbcli.com/.
 
 #. **What's the difference between Smart Completion and Naive Completion?**
 
@@ -108,6 +108,5 @@ knows the answers for them.
 .. _`Python-Prompt-Toolkit`: https://github.com/jonathanslenders/python-prompt-toolkit 
 .. _Sqlparse: https://pypi.python.org/pypi/sqlparse
 .. _contact: {filename}/pages/6.about.rst
-.. _touch: {filename}/pages/6.about.rst
 .. _cmder: http://cmder.net/
 .. _http://mycli.net: http://mycli.net
