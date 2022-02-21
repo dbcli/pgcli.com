@@ -7,7 +7,7 @@ status: hidden
 Most of pgcli's user settings are configured via the file located at
 `~/.config/pgcli/config`, which is a hidden file in your home folder in Linux and macOS.
 On Windows it is located at `%USERPROFILE%\AppData\Local\dbcli\mssql-cli\config`.
-    
+
 The config file is created when pgcli is launched for the very first time.
 Updates to that file are not overwritten by subsequent launches of pgcli.
 
@@ -179,7 +179,7 @@ Token.Toolbar.Transaction.Valid = 'bg:#222222 #00ff5f bold'
 Token.Toolbar.Transaction.Failed = 'bg:#222222 #ff005f bold'
 
 # color of table
-# you can use token or custom colors 
+# you can use token or custom colors
 Token.Output.Header = "#00ff5f bold"
 Token.Output.OddRow = ""
 Token.Output.EvenRow = ""
@@ -197,4 +197,8 @@ Token.Output.EvenRow = ""
 [data_formats]
 decimal = ""
 float = ""
+
+# Automatically open SSH tunnels for the matched hosts
+[ssh tunnels]
+# ^example.*\.host$ = myuser:mypasswd@my.tunnel.com:4000
 ```
