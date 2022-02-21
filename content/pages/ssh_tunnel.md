@@ -47,6 +47,16 @@ $ pgcli postgresql://user:password@my.private.server.com:7777/mydatabase \
     --ssh-tunnel john:mypass@myserver.com:1022
 ```
 
+## Config
+In the configuration file, you can match hosts (with regex) for which to automatically open SSH tunnels.
+
+For example
+```
+[ssh tunnels]
+^example.*\.host$ = myuser:mypasswd@my.tunnel.com:4000
+.*\.net = another.tunnel.com
+```
+
 ## Caveats
 * [ProxyJump](https://man.openbsd.org/ssh_config#ProxyJump) directives are
 [not supported yet](https://github.com/pahaz/sshtunnel/issues/244) by [sshtunnel](https://github.com/pahaz/sshtunnel)
@@ -57,3 +67,4 @@ Example: `ProxyJump %r@bastion.server.com` becomes `ProxyCommand ssh %r@bastion.
 [not supported yet](https://github.com/paramiko/paramiko/pull/1892) by
 [paramiko](https://github.com/paramiko/paramiko), the Python SSH implementation used by `sshtunnel`.
 The workaround is to put everything in your main config file.
+
