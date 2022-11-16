@@ -40,6 +40,12 @@ Examples:
     simple: Deleted
 ```
 
+## Save location
+
+Queries are saved in the `[named queries]` section of the 
+[Config]({filename}/pages/config.md) file. You can also edit the config
+file to manage the named queries.
+
 ## Positional Parameters
 
 Named queries support shell-style parameter substitution. Save your named
