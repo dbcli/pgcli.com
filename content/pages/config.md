@@ -186,6 +186,8 @@ Token.Output.EvenRow = ""
 
 # Named queries are queries you can execute by name.
 [named queries]
+# See the documentation on named queries for more examples.
+simple = select * from abc where a is not Null
 
 # DSN to call by -D option
 [alias_dsn]
