@@ -46,6 +46,28 @@ Queries are saved in the `[named queries]` section of the
 [Config]({filename}/pages/config.md) file. You can also edit the config
 file to manage the named queries.
 
+An example of a query on a single line of the config file:
+
+```yaml
+[named queries]
+simple = select * from abc where a is not Null
+```
+
+To create a named query that spans multiple lines do this:
+
+```yaml
+[named queries]
+complex = """
+    select
+        *
+    from
+        abc
+    where
+        a is not Null
+"""
+```
+
+
 ## Positional Parameters
 
 Named queries support shell-style parameter substitution. Save your named
