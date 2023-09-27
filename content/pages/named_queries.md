@@ -94,7 +94,7 @@ each aggregated value.
 
 ### Raw Aggregation
 ```
-\ns users_by_age select * from users where id in ($*)
+\ns users_by_age select * from users where age in ($*)
 ```
 
 When you call a named query with parameters, just add any (at least one)
