@@ -42,6 +42,16 @@ multi_line_mode = psql
 # or "shutdown".
 destructive_warning = True
 
+# Destructive warning can restart the connection if this is enabled and the
+# user declines. This means that any current uncommitted transaction can be
+# aborted if the user doesn't want to proceed with a destructive_warning
+# statement.
+destructive_warning_restarts_connection = False
+
+# When this option is on (and if `destructive_warning` is set),
+# destructive statements are not executed when outside of a transaction.
+destructive_statements_require_transaction = False
+
 # Enables expand mode, which is similar to `\x` in psql.
 expand = False
 
