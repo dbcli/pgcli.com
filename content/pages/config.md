@@ -6,7 +6,7 @@ status: hidden
 
 Most of pgcli's user settings are configured via the file located at
 `~/.config/pgcli/config`, which is a hidden file in your home folder in Linux and macOS.
-On Windows it is located at `%USERPROFILE%\AppData\Local\dbcli\mssql-cli\config`.
+On Windows it is located at `%USERPROFILE%\AppData\Local\dbcli\pgcli\config`.
 
 The config file is created when pgcli is launched for the very first time.
 Updates to that file are not overwritten by subsequent launches of pgcli.
