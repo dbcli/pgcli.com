@@ -41,3 +41,6 @@ export LESS="-XFR"
 # Some pgcli users like to disable line wrapping.
 export LESS="-SRXF"
 ```
+
+If the `LESS` environment variable is not set, and `less` is the pager, then
+the `LESS` environment variable will automatically be set to `-SRXF`.
