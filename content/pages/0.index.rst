@@ -37,7 +37,7 @@ highlighting.
 * Source: https://github.com/dbcli/pgcli
 
 .. image:: {filename}/images/image01.png
-   :alt: Screenshot
+   :alt: Screenshot of pgcli showing SQL output and auto-completion on table names
    :width: 750px
 
 Quick Start
