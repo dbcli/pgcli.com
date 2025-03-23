@@ -166,6 +166,13 @@ null_string = '<null>'
 # manage pager on startup
 enable_pager = True
 
+# Use keyring to automatically save and load password in a secure manner
+keyring = True
+
+# Automatically set the session time zone to the local time zone
+# If unset, uses the server's time zone, which is the Postgres default
+use_local_timezone = True
+
 # Custom colors for the completion menu, toolbar, etc.
 [colors]
 Token.Menu.Completions.Completion.Current = 'bg:#ffffff #000000'
