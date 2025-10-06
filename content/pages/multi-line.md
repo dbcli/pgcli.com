@@ -9,5 +9,5 @@ enter a semi-colon to denote the end of the query.
 To emulate the original `psql` behavior you can enable the multi-line mode which
 will require a semi-colon to be present at the end of the line. This enables
 writing multi-line queries if they are really long. You can enable multi-line
-mode by pressing `<F3>` key or set it permanently via the
+mode by pressing `F3` key or set it permanently via the
 [config]({filename}/pages/config.md) file. 
