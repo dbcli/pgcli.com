@@ -4,6 +4,8 @@ A website for pgcli project.
 
 # Running the server
 
+Use Python 3.12 to match the Netlify build runtime in `runtime.txt`.
+
 ### Install the requirements file
 `pip install -r requirements.txt`
 
